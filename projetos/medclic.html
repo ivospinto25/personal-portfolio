@@ -180,321 +180,102 @@
             <h3>Arquitetura de informação</h3>
             <p>Três perfis, três mapas: o que cada pessoa encontra ao entrar, por onde navega e que ações tem disponíveis.</p>
 
-            <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-              <symbol id="i-modal" viewBox="0 0 16 16"><path d="M8 1.8 15 14H1L8 1.8Z" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8 6.2v3.6M8 11.6v.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
-              <symbol id="i-panel" viewBox="0 0 16 16"><rect x="1.5" y="2.5" width="13" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M9.5 2.5v11" stroke="currentColor" stroke-width="1.4"/><rect x="10.2" y="3.2" width="3.6" height="9.6" rx="1" fill="currentColor" opacity=".35"/></symbol>
-            </svg>
+            <div class="sitemap-tabs reveal" data-tabs>
+              <div class="seg" role="tablist" aria-label="Perfil">
+                <button type="button" role="tab" id="tab-medico" aria-controls="sm-medico" aria-selected="true">Médico</button>
+                <button type="button" role="tab" id="tab-paciente" aria-controls="sm-paciente" aria-selected="false" tabindex="-1">Paciente</button>
+                <button type="button" role="tab" id="tab-admin" aria-controls="sm-admin" aria-selected="false" tabindex="-1">Administrador</button>
+              </div>
 
-            <div class="ia-group">
               <!-- Médico -->
-              <figure class="ia reveal" aria-labelledby="ia-medico-t">
-                <div class="ia__head">
-                  <div>
-                    <h4 class="ia__title" id="ia-medico-t">Lado do médico</h4>
-                    <p class="ia__persona">Usado por Carlos Magalhães, cirurgião ortopédico</p>
-                  </div>
-                  <ul class="ia-legend" aria-label="Legenda">
-                    <li><span class="n n--page">Página</span></li>
-                    <li><span class="n n--section">Secção</span></li>
-                    <li><span class="n n--feature">Funcionalidade / menu</span></li>
+              <div class="sitemap" id="sm-medico" role="tabpanel" aria-labelledby="tab-medico" tabindex="0">
+                <div class="sitemap__top">
+                  <span class="sitemap__page">Página inicial</span>
+                  <p class="sitemap__who">Carlos Magalhães · cirurgião ortopédico</p>
+                </div>
+                <div class="sitemap__group">
+                  <p class="label">Barra superior</p>
+                  <p class="sitemap__inline">Notificações · Pesquisa de pacientes · A minha conta</p>
+                </div>
+                <div class="sitemap__group">
+                  <p class="label">Menu lateral</p>
+                  <ul class="sitemap__cols sitemap__cols--4">
+                    <li class="sitemap__col"><h5>Calendário</h5><p>Consultas, ausências e horários de abertura</p></li>
+                    <li class="sitemap__col"><h5>Mensagens dos pacientes</h5><p>Conversas com pacientes, com anexos</p></li>
+                    <li class="sitemap__col"><h5>Consulta de vídeo</h5><p>Teleconsultas, documentos e cobrança</p></li>
+                    <li class="sitemap__col"><h5>Gestão dos pacientes</h5><p>Comunicações em grupo</p></li>
+                    <li class="sitemap__col"><h5>Equipa</h5><p>Chat com outros profissionais</p></li>
+                    <li class="sitemap__col"><h5>Minha atividade</h5><p>Histórico de atividade</p></li>
+                    <li class="sitemap__col"><h5>Notas</h5></li>
+                    <li class="sitemap__col"><h5>Tarefas</h5></li>
                   </ul>
                 </div>
-                <ul class="tree">
-                  <li>
-                    <span class="n n--page">Página inicial <small>· conta iniciada</small></span>
-                    <ul>
-                      <li>
-                        <span class="n n--section">Barra superior</span>
-                        <ul class="ia-chips">
-                          <li><span class="n n--feature">Notificações</span></li>
-                          <li><span class="n n--feature">Pesquisa de pacientes</span></li>
-                          <li><span class="n n--feature">A minha conta</span></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <span class="n n--section">Menu lateral</span>
-                        <ul class="ia-cards">
-                          <li class="ia-card">
-                            <h5>Calendário</h5>
-                            <p>Ver as consultas marcadas e as ausências do médico.</p>
-                            <ul>
-                              <li>Vista em lista, dia, semana ou mês</li>
-                              <li>Definir horários de abertura e especialidade</li>
-                              <li>Compromissos: ausência, encontros, abertura excecional</li>
-                              <li>Uma ausência por cima de uma consulta cancela-a e avisa o paciente por SMS ou email</li>
-                            </ul>
-                          </li>
-                          <li class="ia-card">
-                            <h5>Mensagens dos pacientes</h5>
-                            <p>Chat com os pacientes, para centralizar as comunicações numa só via.</p>
-                            <ul>
-                              <li>Histórico de conversas e pesquisa de pacientes</li>
-                              <li>Nova conversa, com anexos</li>
-                              <li>Permitir ou não que o paciente responda</li>
-                              <li>Adicionar uma solicitação</li>
-                            </ul>
-                          </li>
-                          <li class="ia-card">
-                            <h5>Consulta de vídeo</h5>
-                            <p>Ver todas as teleconsultas.</p>
-                            <ul>
-                              <li>Juntar à sala</li>
-                              <li>Enviar documentos durante a chamada</li>
-                              <li>Cobrança e definição do preço</li>
-                            </ul>
-                          </li>
-                          <li class="ia-card">
-                            <h5>Gestão dos pacientes</h5>
-                            <p>Enviar comunicações em grupo aos pacientes.</p>
-                            <ul>
-                              <li>Nova comunicação: substituição, mudança, prevenção e outros motivos</li>
-                            </ul>
-                          </li>
-                          <li class="ia-card">
-                            <h5>Equipa</h5>
-                            <p>Chat interno para mensagens instantâneas com outros profissionais.</p>
-                            <ul>
-                              <li>Nova mensagem, também para grupos de médicos</li>
-                            </ul>
-                          </li>
-                          <li class="ia-card">
-                            <h5>Minha atividade</h5>
-                            <p>Consultar os dados das atividades anteriores.</p>
-                            <ul>
-                              <li>Separadores: vista geral, visibilidade e atividade</li>
-                            </ul>
-                          </li>
-                          <li class="ia-card ia-card--empty"><h5>Notas</h5></li>
-                          <li class="ia-card ia-card--empty"><h5>Tarefas</h5></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
-              </figure>
+              </div>
 
               <!-- Paciente -->
-              <figure class="ia reveal" aria-labelledby="ia-paciente-t">
-                <div class="ia__head">
-                  <div>
-                    <h4 class="ia__title" id="ia-paciente-t">Lado do paciente</h4>
-                    <p class="ia__persona">Usado por Ana Martins, «guardiã da família»</p>
-                  </div>
-                  <ul class="ia-legend" aria-label="Legenda">
-                    <li><span class="n n--page">Página</span></li>
-                    <li><span class="n n--section">Secção</span></li>
-                    <li><span class="n n--feature">Funcionalidade / menu</span></li>
-                  </ul>
+              <div class="sitemap" id="sm-paciente" role="tabpanel" aria-labelledby="tab-paciente" tabindex="0">
+                <div class="sitemap__top">
+                  <span class="sitemap__page">Home</span>
+                  <p class="sitemap__who">Ana Martins · «guardiã da família»</p>
                 </div>
-                <ul class="tree">
-                  <li>
-                    <span class="n n--page">Home <small>· conta iniciada</small></span>
+                <ul class="sitemap__cols sitemap__cols--4">
+                  <li class="sitemap__col"><h5>Pesquisa</h5><p>Médicos, especialidades e hospitais perto de si</p></li>
+                  <li class="sitemap__col"><h5>Minhas marcações</h5><p>Histórico e detalhe; reagendar ou cancelar</p></li>
+                  <li class="sitemap__col"><h5>Meus documentos</h5><p>Guardar e partilhar documentos de saúde</p></li>
+                  <li class="sitemap__col"><h5>A minha conta</h5><p>Perfil, familiares, contactos, segurança</p></li>
+                </ul>
+                <div class="sitemap__group">
+                  <p class="label">Marcar uma consulta</p>
+                  <ol class="flow">
+                    <li><strong>Pesquisa</strong><span>Nome, especialidade, hospital ou mapa</span></li>
+                    <li><strong>Perfil do médico</strong><span>Opcional: preços, horário, apresentação</span></li>
+                    <li class="is-key"><strong>Paciente</strong><span>A própria pessoa ou um familiar</span></li>
+                    <li class="is-key"><strong>Motivo</strong><span>Especialidade da consulta</span></li>
+                    <li class="is-key"><strong>Disponibilidade</strong><span>Data e hora</span></li>
+                    <li class="is-key"><strong>Confirmação</strong><span>Resumo da marcação</span></li>
+                  </ol>
+                </div>
+              </div>
+
+              <!-- Administrador -->
+              <div class="sitemap" id="sm-admin" role="tabpanel" aria-labelledby="tab-admin" tabindex="0">
+                <div class="sitemap__top">
+                  <span class="sitemap__page">Portal de administrador</span>
+                  <p class="sitemap__who">Deborah Santos · administradora da plataforma</p>
+                </div>
+                <ul class="sitemap__cols sitemap__cols--4">
+                  <li class="sitemap__col">
+                    <h5>Utilizadores</h5>
                     <ul>
-                      <li>
-                        <span class="n n--section">Secções da home</span>
-                        <ul class="ia-cards">
-                          <li class="ia-card"><h5>Pesquisa</h5><p>Procurar médicos, especialidades e hospitais por localização, com geolocalização.</p></li>
-                          <li class="ia-card"><h5>Cards</h5><p>Promoção de funcionalidades da app e notícias.</p></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <span class="n n--feature">A minha conta</span>
-                        <ul class="ia-chips">
-                          <li><span class="n n--feature">Meu perfil</span></li>
-                          <li><span class="n n--feature">Meus parentes</span></li>
-                          <li><span class="n n--feature">Conexão: telefone, email, password</span></li>
-                          <li><span class="n n--feature">Segurança</span></li>
-                          <li><span class="n n--feature">Apagar conta</span></li>
-                          <li><span class="n n--feature">Logout</span></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <span class="n n--feature">Meus documentos</span>
-                        <ul class="ia-cards">
-                          <li class="ia-card"><p>Guardar os próprios documentos de saúde, de forma segura, e partilhá-los facilmente com os médicos.</p></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <span class="n n--feature">Minhas marcações / consultas</span>
-                        <ul class="ia-cards">
-                          <li class="ia-card"><p>Ecrã dividido: à esquerda o histórico de marcações (futuras e anteriores), à direita o detalhe, onde é possível <strong>reagendar</strong> ou <strong>cancelar</strong>.</p></li>
-                        </ul>
-                      </li>
+                      <li>Convidar utilizador</li>
+                      <li>Editar utilizador<small>Reenviar convite, redefinir palavra-passe</small></li>
+                      <li>Bloquear ou ativar</li>
+                    </ul>
+                  </li>
+                  <li class="sitemap__col">
+                    <h5>Consultas</h5>
+                    <ul>
+                      <li>Detalhes da consulta<small>Reagendar, cancelar, marcar nova</small></li>
+                      <li>Cancelar consulta</li>
+                    </ul>
+                  </li>
+                  <li class="sitemap__col">
+                    <h5>Candidaturas</h5>
+                    <ul>
+                      <li>Novas<small>Ver detalhe, aprovar ou rejeitar</small></li>
+                      <li>Rejeitadas</li>
+                      <li>Aprovadas<small>Ver perfil do utilizador</small></li>
+                    </ul>
+                  </li>
+                  <li class="sitemap__col">
+                    <h5>Faturação</h5>
+                    <ul>
+                      <li>Detalhes da fatura<small>Transferir fatura</small></li>
                     </ul>
                   </li>
                 </ul>
-
-                <div class="ia-flow">
-                  <p class="label">Fluxo de marcação</p>
-                  <div class="ia-lane">
-                    <div class="ia-lane__path">
-                      <span class="n n--feature">Minhas marcações</span><span class="ia-arrow" aria-hidden="true">→</span>
-                      <span class="n n--page">Página de pesquisa</span>
-                    </div>
-                    <div class="ia-chips">
-                      <span class="n n--section">Por nome do médico</span>
-                      <span class="n n--section">Por especialidade</span>
-                      <span class="n n--section">Por hospital</span>
-                      <span class="n n--section">Mapa</span>
-                    </div>
-                  </div>
-                  <div class="ia-flow__lanes">
-                    <div class="ia-lane">
-                      <div class="ia-lane__path">
-                        <span class="n n--feature">Marcar consulta</span><span class="ia-arrow" aria-hidden="true">→</span>
-                        <span class="n n--page">Perfil do médico</span>
-                      </div>
-                      <div class="ia-chips">
-                        <span class="n n--section">O essencial: preços, pagamento, especialidades</span>
-                        <span class="n n--section">Mapa</span>
-                        <span class="n n--section">Apresentação: percurso, línguas, diplomas</span>
-                        <span class="n n--section">Horário e contactos</span>
-                        <span class="n n--section">Preços por tipo de consulta</span>
-                        <span class="n n--section">FAQ</span>
-                      </div>
-                    </div>
-                    <div class="ia-lane">
-                      <div class="ia-lane__path">
-                        <span class="n n--feature">Selecionar hora na agenda</span><span class="ia-arrow" aria-hidden="true">→</span>
-                        <span class="n n--page">Página de marcação</span>
-                      </div>
-                      <ol class="ia-steps" aria-label="Passos da marcação">
-                        <li>Informação do paciente<small>Escolher o paciente ou um familiar</small></li>
-                        <li>Motivo da consulta<small>Uma das especialidades do médico</small></li>
-                        <li>Disponibilidade<small>Data e hora</small></li>
-                        <li>Confirmação<small>Resumo dos passos anteriores</small></li>
-                      </ol>
-                      <p class="ia-note">Sem perfil preenchido, é pedida a informação pessoal antes de concluir.</p>
-                    </div>
-                  </div>
-                </div>
-              </figure>
-
-              <!-- Administrador -->
-              <figure class="ia reveal" aria-labelledby="ia-admin-t">
-                <div class="ia__head">
-                  <div>
-                    <h4 class="ia__title" id="ia-admin-t">Lado do administrador</h4>
-                    <p class="ia__persona">Usado por Deborah Santos, administradora da plataforma</p>
-                  </div>
-                  <ul class="ia-legend" aria-label="Legenda">
-                    <li><span class="n n--l1">Área</span></li>
-                    <li><span class="n n--feature">Ecrã ou ação</span></li>
-                    <li><svg class="ico-panel" width="15" height="15" style="color:var(--muted)"><use href="#i-panel"/></svg>Painel lateral</li>
-                    <li><svg class="ico-modal" width="15" height="15" style="color:var(--accent)"><use href="#i-modal"/></svg>Modal de confirmação</li>
-                  </ul>
-                </div>
-                <ul class="ia-stats">
-                  <li><strong>4</strong> áreas</li>
-                  <li><strong>5</strong> níveis</li>
-                  <li><strong>6</strong> painéis laterais</li>
-                  <li><strong>10</strong> modais de confirmação</li>
-                </ul>
-                <div class="ia-areas">
-                  <div class="ia-area">
-                    <ul class="tree">
-                      <li><span class="n n--l1">Utilizadores</span>
-                        <ul>
-                          <li><span class="n">Convidar utilizador</span></li>
-                          <li><span class="n">Editar utilizador</span>
-                            <ul>
-                              <li><span class="n">Reenviar convite</span></li>
-                              <li><span class="n">Redefinir palavra-passe</span></li>
-                              <li><span class="n">Bloquear utilizador</span>
-                                <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar bloqueio<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                              </li>
-                              <li><span class="n">Ativar utilizador</span>
-                                <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar ativação<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span class="n">Bloquear utilizador</span>
-                            <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar bloqueio<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                          </li>
-                          <li><span class="n">Ativar utilizador</span>
-                            <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar ativação<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="ia-area">
-                    <ul class="tree">
-                      <li><span class="n n--l1">Consultas</span>
-                        <ul>
-                          <li><span class="n">Detalhes da consulta</span>
-                            <ul>
-                              <li><span class="n"><svg class="ico-panel"><use href="#i-panel"/></svg>Reagendar consulta<span class="sr-only"> (painel lateral)</span></span>
-                                <ul><li><span class="n">Processo de reagendamento</span></li></ul>
-                              </li>
-                              <li><span class="n"><svg class="ico-panel"><use href="#i-panel"/></svg>Cancelar consulta<span class="sr-only"> (painel lateral)</span></span>
-                                <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar cancelamento<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                              </li>
-                              <li><span class="n"><svg class="ico-panel"><use href="#i-panel"/></svg>Marcar nova consulta<span class="sr-only"> (painel lateral)</span></span>
-                                <ul><li><span class="n">Processo de reagendamento</span></li></ul>
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span class="n">Cancelar consulta</span>
-                            <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar cancelamento<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="ia-area">
-                    <ul class="tree">
-                      <li><span class="n n--l1">Candidaturas</span>
-                        <ul>
-                          <li><span class="n">Novas candidaturas</span>
-                            <ul>
-                              <li><span class="n"><svg class="ico-panel"><use href="#i-panel"/></svg>Detalhe da candidatura<span class="sr-only"> (painel lateral)</span></span>
-                                <ul>
-                                  <li><span class="n">Aprovar</span>
-                                    <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar aprovação<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                                  </li>
-                                  <li><span class="n">Rejeitar</span>
-                                    <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar rejeição<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li><span class="n">Aprovar candidatura</span>
-                                <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar aprovação<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                              </li>
-                              <li><span class="n">Rejeitar candidatura</span>
-                                <ul><li><span class="n n--modal"><svg class="ico-modal"><use href="#i-modal"/></svg>Confirmar rejeição<span class="sr-only"> (modal de confirmação)</span></span></li></ul>
-                              </li>
-                            </ul>
-                          </li>
-                          <li><span class="n">Candidaturas rejeitadas</span>
-                            <ul><li><span class="n"><svg class="ico-panel"><use href="#i-panel"/></svg>Detalhe da candidatura<span class="sr-only"> (painel lateral)</span></span></li></ul>
-                          </li>
-                          <li><span class="n">Candidaturas aprovadas</span>
-                            <ul>
-                              <li><span class="n"><svg class="ico-panel"><use href="#i-panel"/></svg>Detalhe da candidatura<span class="sr-only"> (painel lateral)</span></span></li>
-                              <li><span class="n">Ver perfil do utilizador <span class="n__link">→ Editar utilizador</span></span></li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="ia-area">
-                    <ul class="tree">
-                      <li><span class="n n--l1">Faturação</span>
-                        <ul>
-                          <li><span class="n">Detalhes da fatura</span>
-                            <ul><li><span class="n">Transferir fatura</span></li></ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </figure>
+                <p class="sitemap__note">Bloquear, ativar, cancelar, aprovar e rejeitar pedem sempre confirmação. As ações sobre consultas e o detalhe das candidaturas abrem num painel lateral.</p>
+              </div>
             </div>
 
             <p class="ia-source">Mapas originais: <a href="../assets/img/medclic/03-ai-medico.webp">médico</a> · <a href="../assets/img/medclic/04-ai-paciente.webp">paciente</a> · <a href="../assets/img/medclic/05-ai-administrador.webp">administrador</a></p>
