@@ -186,96 +186,410 @@
                 <button type="button" role="tab" id="tab-paciente" aria-controls="sm-paciente" aria-selected="false" tabindex="-1">Paciente</button>
                 <button type="button" role="tab" id="tab-admin" aria-controls="sm-admin" aria-selected="false" tabindex="-1">Administrador</button>
               </div>
-
-              <!-- Médico -->
-              <div class="sitemap" id="sm-medico" role="tabpanel" aria-labelledby="tab-medico" tabindex="0">
-                <div class="sitemap__top">
-                  <span class="sitemap__page">Página inicial</span>
-                  <p class="sitemap__who">Carlos Magalhães · cirurgião ortopédico</p>
-                </div>
-                <div class="sitemap__group">
-                  <p class="label">Barra superior</p>
-                  <p class="sitemap__inline">Notificações · Pesquisa de pacientes · A minha conta</p>
-                </div>
-                <div class="sitemap__group">
-                  <p class="label">Menu lateral</p>
-                  <ul class="sitemap__cols sitemap__cols--4">
-                    <li class="sitemap__col"><h5>Calendário</h5><p>Consultas, ausências e horários de abertura</p></li>
-                    <li class="sitemap__col"><h5>Mensagens dos pacientes</h5><p>Conversas com pacientes, com anexos</p></li>
-                    <li class="sitemap__col"><h5>Consulta de vídeo</h5><p>Teleconsultas, documentos e cobrança</p></li>
-                    <li class="sitemap__col"><h5>Gestão dos pacientes</h5><p>Comunicações em grupo</p></li>
-                    <li class="sitemap__col"><h5>Equipa</h5><p>Chat com outros profissionais</p></li>
-                    <li class="sitemap__col"><h5>Minha atividade</h5><p>Histórico de atividade</p></li>
-                    <li class="sitemap__col"><h5>Notas</h5></li>
-                    <li class="sitemap__col"><h5>Tarefas</h5></li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Paciente -->
-              <div class="sitemap" id="sm-paciente" role="tabpanel" aria-labelledby="tab-paciente" tabindex="0">
-                <div class="sitemap__top">
-                  <span class="sitemap__page">Home</span>
-                  <p class="sitemap__who">Ana Martins · «guardiã da família»</p>
-                </div>
-                <ul class="sitemap__cols sitemap__cols--4">
-                  <li class="sitemap__col"><h5>Pesquisa</h5><p>Médicos, especialidades e hospitais perto de si</p></li>
-                  <li class="sitemap__col"><h5>Minhas marcações</h5><p>Histórico e detalhe; reagendar ou cancelar</p></li>
-                  <li class="sitemap__col"><h5>Meus documentos</h5><p>Guardar e partilhar documentos de saúde</p></li>
-                  <li class="sitemap__col"><h5>A minha conta</h5><p>Perfil, familiares, contactos, segurança</p></li>
+              <figure class="flowmap" id="sm-medico" role="tabpanel" aria-labelledby="tab-medico" tabindex="0">
+                <figcaption class="sr-only">Arquitetura de informação do lado do médico</figcaption>
+                <svg class="flowmap__svg flowmap__svg--wide" viewBox="0 0 1180 500" role="presentation" aria-hidden="true" focusable="false">
+                <defs><marker id="fm-med-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1.5 1.5 6 4 1.5 6.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></marker><radialGradient id="fm-med-glow"><stop offset="0" stop-color="var(--accent)" stop-opacity=".45"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
+                <path class="fm-edge fm-edge--solid" d="M590 78.0V110Q590 120 580 120H240Q230 120 230 130V151.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M590 78.0V110Q590 120 600 120H750Q760 120 760 130V151.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M165.0 198.0V246Q165.0 256 175.0 256H189.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M165.0 198.0V306Q165.0 316 175.0 316H189.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M165.0 198.0V366Q165.0 376 175.0 376H189.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M760 198.0V246Q760 256 750 256H550.5Q540.5 256 540.5 266V291.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M760 198.0V246Q760 256 750 256H698.0Q688.0 256 688.0 266V291.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M760 198.0V246Q760 256 770 256H826.0Q836.0 256 836.0 266V291.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M760 198.0V246Q760 256 770 256H966.0Q976.0 256 976.0 266V291.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M760 198.0V376Q760 386 750 386H374.5Q364.5 386 364.5 396V411.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M760 198.0V376Q760 386 750 386H630.0Q620.0 386 620.0 396V411.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M760 198.0V376Q760 386 770 386H842.5Q852.5 386 852.5 396V411.0" marker-end="url(#fm-med-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M760 198.0V376Q760 386 770 386H1056.0Q1066.0 386 1066.0 396V411.0" marker-end="url(#fm-med-arrow)"/>
+                <ellipse cx="590.0" cy="56" rx="148" ry="46" fill="url(#fm-med-glow)"/>
+                <g class="fm-node fm-node--root"><rect x="503.0" y="34.0" width="174" height="44" rx="22"/><circle class="fm-ico-bg" cx="525.0" cy="56" r="15"/><g class="fm-ico" transform="translate(517.0 48)"><path d="M3 8 8 3.5 13 8M4.6 7v5.5h6.8V7"/></g><text x="549.0" y="61">Página inicial</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="143.0" y="154.0" width="174" height="44" rx="22"/><circle class="fm-ico-bg" cx="165.0" cy="176" r="15"/><g class="fm-ico" transform="translate(157.0 168)"><rect x="2.5" y="3" width="11" height="10" rx="1.6"/><path d="M2.5 6h11"/></g><text x="189.0" y="181">Barra superior</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="681.0" y="154.0" width="158" height="44" rx="22"/><circle class="fm-ico-bg" cx="703.0" cy="176" r="15"/><g class="fm-ico" transform="translate(695.0 168)"><path d="M3 4.5h10M3 8h10M3 11.5h10"/></g><text x="727.0" y="181">Menu lateral</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="192.0" y="234.0" width="158" height="44" rx="22"/><circle class="fm-ico-bg" cx="214.0" cy="256" r="15"/><g class="fm-ico" transform="translate(206.0 248)"><path d="M4.5 11V7.5a3.5 3.5 0 0 1 7 0V11l1 1.2h-9L4.5 11ZM6.8 13.6h2.4"/></g><text x="238.0" y="261">Notificações</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="192.0" y="294.0" width="228" height="44" rx="22"/><circle class="fm-ico-bg" cx="214.0" cy="316" r="15"/><g class="fm-ico" transform="translate(206.0 308)"><circle cx="7" cy="7" r="4"/><path d="m10 10 3.2 3.2"/></g><text x="238.0" y="321">Pesquisa de pacientes</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="192.0" y="354.0" width="166" height="44" rx="22"/><circle class="fm-ico-bg" cx="214.0" cy="376" r="15"/><g class="fm-ico" transform="translate(206.0 368)"><circle cx="8" cy="5.8" r="2.5"/><path d="M3.3 13.3c.8-2.4 2.6-3.6 4.7-3.6s3.9 1.2 4.7 3.6"/></g><text x="238.0" y="381">A minha conta</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="636.0" y="294.0" width="104" height="44" rx="22"/><circle class="fm-ico-bg" cx="658.0" cy="316" r="15"/><g class="fm-ico" transform="translate(650.0 308)"><path d="M4 2.8h5.5L12 5.3v7.9H4z"/><path d="M6 8h4M6 10.5h3"/></g><text x="682.0" y="321">Notas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="469.0" y="294.0" width="143" height="44" rx="22"/><circle class="fm-ico-bg" cx="491.0" cy="316" r="15"/><g class="fm-ico" transform="translate(483.0 308)"><rect x="2.8" y="4" width="10.4" height="9" rx="1.6"/><path d="M2.8 7.2h10.4M5.8 2.6V5M10.2 2.6V5"/></g><text x="515.0" y="321">Calendário</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="780.0" y="294.0" width="112" height="44" rx="22"/><circle class="fm-ico-bg" cx="802.0" cy="316" r="15"/><g class="fm-ico" transform="translate(794.0 308)"><circle cx="6" cy="6" r="2.2"/><path d="M2.2 13c.6-2 2-3 3.8-3s3.2 1 3.8 3"/><circle cx="11.2" cy="6.4" r="1.8"/><path d="M10.6 9.9c1.6 0 2.7.9 3.2 2.6"/></g><text x="826.0" y="321">Equipa</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="916.0" y="294.0" width="120" height="44" rx="22"/><circle class="fm-ico-bg" cx="938.0" cy="316" r="15"/><g class="fm-ico" transform="translate(930.0 308)"><rect x="2.8" y="2.8" width="10.4" height="10.4" rx="2"/><path d="m5.5 8.2 1.8 1.8 3.3-3.6"/></g><text x="962.0" y="321">Tarefas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="243.0" y="414.0" width="243" height="44" rx="22"/><circle class="fm-ico-bg" cx="265.0" cy="436" r="15"/><g class="fm-ico" transform="translate(257.0 428)"><path d="M3 4.5A1.5 1.5 0 0 1 4.5 3h7A1.5 1.5 0 0 1 13 4.5v5A1.5 1.5 0 0 1 11.5 11H7l-3 2.3V11h0A1.5 1.5 0 0 1 3 9.5z"/></g><text x="289.0" y="441">Mensagens dos pacientes</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="510.0" y="414.0" width="220" height="44" rx="22"/><circle class="fm-ico-bg" cx="532.0" cy="436" r="15"/><g class="fm-ico" transform="translate(524.0 428)"><path d="M3 6.5v3h2l5 3V3.5l-5 3H3Z"/><path d="M12 6.3a2.3 2.3 0 0 1 0 3.4"/></g><text x="556.0" y="441">Gestão dos pacientes</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="754.0" y="414.0" width="197" height="44" rx="22"/><circle class="fm-ico-bg" cx="776.0" cy="436" r="15"/><g class="fm-ico" transform="translate(768.0 428)"><rect x="2.5" y="4.5" width="8" height="7" rx="1.5"/><path d="m10.5 7 3-1.8v5.6l-3-1.8"/></g><text x="800.0" y="441">Consulta de vídeo</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="975.0" y="414.0" width="182" height="44" rx="22"/><circle class="fm-ico-bg" cx="997.0" cy="436" r="15"/><g class="fm-ico" transform="translate(989.0 428)"><path d="M2.5 8.5h2.5l1.5-4 3 7 1.5-3h2.5"/></g><text x="1021.0" y="441">Minha atividade</text>
+                </g>
+                </svg>
+                <svg class="flowmap__svg flowmap__svg--tall" viewBox="0 0 347 846" role="presentation" aria-hidden="true" focusable="false">
+                <defs><marker id="fm-med-v-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1.5 1.5 6 4 1.5 6.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></marker><radialGradient id="fm-med-v-glow"><stop offset="0" stop-color="var(--accent)" stop-opacity=".45"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
+                <path class="fm-edge fm-edge--solid" d="M30.0 52.0V78Q30.0 88 40.0 88H39.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 110.0V136Q64.0 146 74.0 146H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 110.0V194Q64.0 204 74.0 204H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 110.0V252Q64.0 262 74.0 262H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M30.0 52.0V310Q30.0 320 40.0 320H39.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 342.0V368Q64.0 378 74.0 378H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 342.0V426Q64.0 436 74.0 436H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 342.0V484Q64.0 494 74.0 494H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 342.0V542Q64.0 552 74.0 552H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 342.0V600Q64.0 610 74.0 610H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 342.0V658Q64.0 668 74.0 668H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 342.0V716Q64.0 726 74.0 726H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 342.0V774Q64.0 784 74.0 784H73.0" marker-end="url(#fm-med-v-arrow)"/>
+                <ellipse cx="95.0" cy="30" rx="148" ry="46" fill="url(#fm-med-v-glow)"/>
+                <g class="fm-node fm-node--root"><rect x="8.0" y="8.0" width="174" height="44" rx="22"/><circle class="fm-ico-bg" cx="30.0" cy="30" r="15"/><g class="fm-ico" transform="translate(22.0 22)"><path d="M3 8 8 3.5 13 8M4.6 7v5.5h6.8V7"/></g><text x="54.0" y="35">Página inicial</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="42.0" y="66.0" width="174" height="44" rx="22"/><circle class="fm-ico-bg" cx="64.0" cy="88" r="15"/><g class="fm-ico" transform="translate(56.0 80)"><rect x="2.5" y="3" width="11" height="10" rx="1.6"/><path d="M2.5 6h11"/></g><text x="88.0" y="93">Barra superior</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="124.0" width="158" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="146" r="15"/><g class="fm-ico" transform="translate(90.0 138)"><path d="M4.5 11V7.5a3.5 3.5 0 0 1 7 0V11l1 1.2h-9L4.5 11ZM6.8 13.6h2.4"/></g><text x="122.0" y="151">Notificações</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="182.0" width="228" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="204" r="15"/><g class="fm-ico" transform="translate(90.0 196)"><circle cx="7" cy="7" r="4"/><path d="m10 10 3.2 3.2"/></g><text x="122.0" y="209">Pesquisa de pacientes</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="240.0" width="166" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="262" r="15"/><g class="fm-ico" transform="translate(90.0 254)"><circle cx="8" cy="5.8" r="2.5"/><path d="M3.3 13.3c.8-2.4 2.6-3.6 4.7-3.6s3.9 1.2 4.7 3.6"/></g><text x="122.0" y="267">A minha conta</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="42.0" y="298.0" width="158" height="44" rx="22"/><circle class="fm-ico-bg" cx="64.0" cy="320" r="15"/><g class="fm-ico" transform="translate(56.0 312)"><path d="M3 4.5h10M3 8h10M3 11.5h10"/></g><text x="88.0" y="325">Menu lateral</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="356.0" width="143" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="378" r="15"/><g class="fm-ico" transform="translate(90.0 370)"><rect x="2.8" y="4" width="10.4" height="9" rx="1.6"/><path d="M2.8 7.2h10.4M5.8 2.6V5M10.2 2.6V5"/></g><text x="122.0" y="383">Calendário</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="414.0" width="104" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="436" r="15"/><g class="fm-ico" transform="translate(90.0 428)"><path d="M4 2.8h5.5L12 5.3v7.9H4z"/><path d="M6 8h4M6 10.5h3"/></g><text x="122.0" y="441">Notas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="472.0" width="112" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="494" r="15"/><g class="fm-ico" transform="translate(90.0 486)"><circle cx="6" cy="6" r="2.2"/><path d="M2.2 13c.6-2 2-3 3.8-3s3.2 1 3.8 3"/><circle cx="11.2" cy="6.4" r="1.8"/><path d="M10.6 9.9c1.6 0 2.7.9 3.2 2.6"/></g><text x="122.0" y="499">Equipa</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="530.0" width="120" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="552" r="15"/><g class="fm-ico" transform="translate(90.0 544)"><rect x="2.8" y="2.8" width="10.4" height="10.4" rx="2"/><path d="m5.5 8.2 1.8 1.8 3.3-3.6"/></g><text x="122.0" y="557">Tarefas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="588.0" width="243" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="610" r="15"/><g class="fm-ico" transform="translate(90.0 602)"><path d="M3 4.5A1.5 1.5 0 0 1 4.5 3h7A1.5 1.5 0 0 1 13 4.5v5A1.5 1.5 0 0 1 11.5 11H7l-3 2.3V11h0A1.5 1.5 0 0 1 3 9.5z"/></g><text x="122.0" y="615">Mensagens dos pacientes</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="646.0" width="220" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="668" r="15"/><g class="fm-ico" transform="translate(90.0 660)"><path d="M3 6.5v3h2l5 3V3.5l-5 3H3Z"/><path d="M12 6.3a2.3 2.3 0 0 1 0 3.4"/></g><text x="122.0" y="673">Gestão dos pacientes</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="704.0" width="197" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="726" r="15"/><g class="fm-ico" transform="translate(90.0 718)"><rect x="2.5" y="4.5" width="8" height="7" rx="1.5"/><path d="m10.5 7 3-1.8v5.6l-3-1.8"/></g><text x="122.0" y="731">Consulta de vídeo</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="762.0" width="182" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="784" r="15"/><g class="fm-ico" transform="translate(90.0 776)"><path d="M2.5 8.5h2.5l1.5-4 3 7 1.5-3h2.5"/></g><text x="122.0" y="789">Minha atividade</text>
+                </g>
+                </svg>
+                <ul class="flowmap__legend" aria-hidden="true">
+                  <li><i class="lg-root"></i>Ponto de entrada</li>
+                  <li><i class="lg-node"></i>Página ou funcionalidade</li>
+                  
                 </ul>
-                <div class="sitemap__group">
-                  <p class="label">Marcar uma consulta</p>
-                  <ol class="flow">
-                    <li><strong>Pesquisa</strong><span>Nome, especialidade, hospital ou mapa</span></li>
-                    <li><strong>Perfil do médico</strong><span>Opcional: preços, horário, apresentação</span></li>
-                    <li class="is-key"><strong>Paciente</strong><span>A própria pessoa ou um familiar</span></li>
-                    <li class="is-key"><strong>Motivo</strong><span>Especialidade da consulta</span></li>
-                    <li class="is-key"><strong>Disponibilidade</strong><span>Data e hora</span></li>
-                    <li class="is-key"><strong>Confirmação</strong><span>Resumo da marcação</span></li>
-                  </ol>
-                </div>
-              </div>
-
-              <!-- Administrador -->
-              <div class="sitemap" id="sm-admin" role="tabpanel" aria-labelledby="tab-admin" tabindex="0">
-                <div class="sitemap__top">
-                  <span class="sitemap__page">Portal de administrador</span>
-                  <p class="sitemap__who">Deborah Santos · administradora da plataforma</p>
-                </div>
-                <ul class="sitemap__cols sitemap__cols--4">
-                  <li class="sitemap__col">
-                    <h5>Utilizadores</h5>
-                    <ul>
-                      <li>Convidar utilizador</li>
-                      <li>Editar utilizador<small>Reenviar convite, redefinir palavra-passe</small></li>
-                      <li>Bloquear ou ativar</li>
-                    </ul>
-                  </li>
-                  <li class="sitemap__col">
-                    <h5>Consultas</h5>
-                    <ul>
-                      <li>Detalhes da consulta<small>Reagendar, cancelar, marcar nova</small></li>
-                      <li>Cancelar consulta</li>
-                    </ul>
-                  </li>
-                  <li class="sitemap__col">
-                    <h5>Candidaturas</h5>
-                    <ul>
-                      <li>Novas<small>Ver detalhe, aprovar ou rejeitar</small></li>
-                      <li>Rejeitadas</li>
-                      <li>Aprovadas<small>Ver perfil do utilizador</small></li>
-                    </ul>
-                  </li>
-                  <li class="sitemap__col">
-                    <h5>Faturação</h5>
-                    <ul>
-                      <li>Detalhes da fatura<small>Transferir fatura</small></li>
-                    </ul>
-                  </li>
+                <div class="flowmap__list"><ul><li>Página inicial<ul><li>Barra superior: Notificações, Pesquisa de pacientes, A minha conta</li><li>Menu lateral: Calendário, Notas, Equipa, Tarefas, Mensagens dos pacientes, Gestão dos pacientes, Consulta de vídeo, Minha atividade</li></ul></li></ul></div>
+              </figure>
+              <figure class="flowmap" id="sm-paciente" role="tabpanel" aria-labelledby="tab-paciente" tabindex="0">
+                <figcaption class="sr-only">Arquitetura de informação do lado do paciente</figcaption>
+                <svg class="flowmap__svg flowmap__svg--wide" viewBox="0 0 1180 600" role="presentation" aria-hidden="true" focusable="false">
+                <defs><marker id="fm-pac-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1.5 1.5 6 4 1.5 6.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></marker><radialGradient id="fm-pac-glow"><stop offset="0" stop-color="var(--accent)" stop-opacity=".45"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
+                <path class="fm-edge fm-edge--solid" d="M568.5 56H629.5" marker-end="url(#fm-pac-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M520 78.0V110Q520 120 510 120H340Q330 120 330 130V151.0" marker-end="url(#fm-pac-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M520 78.0V110Q520 120 530 120H690Q700 120 700 130V151.0" marker-end="url(#fm-pac-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M700 198.0V271.0" marker-end="url(#fm-pac-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M700 318.0V360Q700 370 690 370H550Q540 370 540 380V391.0" marker-end="url(#fm-pac-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M700 318.0V360Q700 370 710 370H870Q880 370 880 380V391.0" marker-end="url(#fm-pac-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M540 438.0V511.0" marker-end="url(#fm-pac-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M880 438.0V511.0" marker-end="url(#fm-pac-arrow)"/>
+                <ellipse cx="520.0" cy="56" rx="82" ry="46" fill="url(#fm-pac-glow)"/>
+                <g class="fm-node fm-node--root"><rect x="471.5" y="34.0" width="97" height="44" rx="22"/><circle class="fm-ico-bg" cx="493.5" cy="56" r="15"/><g class="fm-ico" transform="translate(485.5 48)"><path d="M3 8 8 3.5 13 8M4.6 7v5.5h6.8V7"/></g><text x="517.5" y="61">Home</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="632.5" y="34.0" width="166" height="44" rx="22"/><circle class="fm-ico-bg" cx="654.5" cy="56" r="15"/><g class="fm-ico" transform="translate(646.5 48)"><circle cx="8" cy="5.8" r="2.5"/><path d="M3.3 13.3c.8-2.4 2.6-3.6 4.7-3.6s3.9 1.2 4.7 3.6"/></g><text x="678.5" y="61">A minha conta</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="239.0" y="154.0" width="182" height="44" rx="22"/><circle class="fm-ico-bg" cx="261.0" cy="176" r="15"/><g class="fm-ico" transform="translate(253.0 168)"><path d="M4 2.8h5.5L12 5.3v7.9H4z"/><path d="M9.3 2.8v2.7H12"/></g><text x="285.0" y="181">Meus documentos</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="605.5" y="154.0" width="189" height="44" rx="22"/><circle class="fm-ico-bg" cx="627.5" cy="176" r="15"/><g class="fm-ico" transform="translate(619.5 168)"><path d="M6 4.5h7M6 8h7M6 11.5h7"/><circle cx="3.5" cy="4.5" r=".6" fill="currentColor"/><circle cx="3.5" cy="8" r=".6" fill="currentColor"/><circle cx="3.5" cy="11.5" r=".6" fill="currentColor"/></g><text x="651.5" y="181">Minhas marcações</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="597.5" y="274.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="619.5" cy="296" r="15"/><g class="fm-ico" transform="translate(611.5 288)"><circle cx="7" cy="7" r="4"/><path d="m10 10 3.2 3.2"/></g><text x="643.5" y="301">Página de pesquisa</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="449.0" y="394.0" width="182" height="44" rx="22"/><circle class="fm-ico-bg" cx="471.0" cy="416" r="15"/><g class="fm-ico" transform="translate(463.0 408)"><rect x="2.8" y="4" width="10.4" height="9" rx="1.6"/><path d="M2.8 7.2h10.4M5.8 2.6V5M10.2 2.6V5"/></g><text x="495.0" y="421">Marcar consulta</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="712.0" y="394.0" width="336" height="44" rx="22"/><circle class="fm-ico-bg" cx="734.0" cy="416" r="15"/><g class="fm-ico" transform="translate(726.0 408)"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v3l2 1.5"/></g><text x="758.0" y="421">Selecionar hora na agenda do médico</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="445.5" y="514.0" width="189" height="44" rx="22"/><circle class="fm-ico-bg" cx="467.5" cy="536" r="15"/><g class="fm-ico" transform="translate(459.5 528)"><path d="M4 2.8v3.5a2.5 2.5 0 0 0 5 0V2.8M6.5 8.8v1.7a2.7 2.7 0 0 0 5.4 0V9"/><circle cx="11.9" cy="7.8" r="1.2"/></g><text x="491.5" y="541">Perfil do médico</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="731.5" y="514.0" width="297" height="44" rx="22"/><circle class="fm-ico-bg" cx="753.5" cy="536" r="15"/><g class="fm-ico" transform="translate(745.5 528)"><rect x="2.8" y="2.8" width="10.4" height="10.4" rx="2"/><path d="m5.5 8.2 1.8 1.8 3.3-3.6"/></g><text x="777.5" y="541">Página de marcação de consulta</text>
+                </g>
+                </svg>
+                <svg class="flowmap__svg flowmap__svg--tall" viewBox="0 0 396 556" role="presentation" aria-hidden="true" focusable="false">
+                <defs><marker id="fm-pac-v-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1.5 1.5 6 4 1.5 6.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></marker><radialGradient id="fm-pac-v-glow"><stop offset="0" stop-color="var(--accent)" stop-opacity=".45"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
+                <path class="fm-edge fm-edge--solid" d="M30.0 52.0V78Q30.0 88 40.0 88H39.0" marker-end="url(#fm-pac-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M30.0 52.0V136Q30.0 146 40.0 146H39.0" marker-end="url(#fm-pac-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M30.0 52.0V194Q30.0 204 40.0 204H39.0" marker-end="url(#fm-pac-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 226.0V252Q64.0 262 74.0 262H73.0" marker-end="url(#fm-pac-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 284.0V310Q98.0 320 108.0 320H107.0" marker-end="url(#fm-pac-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M132.0 342.0V368Q132.0 378 142.0 378H141.0" marker-end="url(#fm-pac-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 284.0V426Q98.0 436 108.0 436H107.0" marker-end="url(#fm-pac-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M132.0 458.0V484Q132.0 494 142.0 494H141.0" marker-end="url(#fm-pac-v-arrow)"/>
+                <ellipse cx="56.5" cy="30" rx="82" ry="46" fill="url(#fm-pac-v-glow)"/>
+                <g class="fm-node fm-node--root"><rect x="8.0" y="8.0" width="97" height="44" rx="22"/><circle class="fm-ico-bg" cx="30.0" cy="30" r="15"/><g class="fm-ico" transform="translate(22.0 22)"><path d="M3 8 8 3.5 13 8M4.6 7v5.5h6.8V7"/></g><text x="54.0" y="35">Home</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="42.0" y="66.0" width="166" height="44" rx="22"/><circle class="fm-ico-bg" cx="64.0" cy="88" r="15"/><g class="fm-ico" transform="translate(56.0 80)"><circle cx="8" cy="5.8" r="2.5"/><path d="M3.3 13.3c.8-2.4 2.6-3.6 4.7-3.6s3.9 1.2 4.7 3.6"/></g><text x="88.0" y="93">A minha conta</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="42.0" y="124.0" width="182" height="44" rx="22"/><circle class="fm-ico-bg" cx="64.0" cy="146" r="15"/><g class="fm-ico" transform="translate(56.0 138)"><path d="M4 2.8h5.5L12 5.3v7.9H4z"/><path d="M9.3 2.8v2.7H12"/></g><text x="88.0" y="151">Meus documentos</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="42.0" y="182.0" width="189" height="44" rx="22"/><circle class="fm-ico-bg" cx="64.0" cy="204" r="15"/><g class="fm-ico" transform="translate(56.0 196)"><path d="M6 4.5h7M6 8h7M6 11.5h7"/><circle cx="3.5" cy="4.5" r=".6" fill="currentColor"/><circle cx="3.5" cy="8" r=".6" fill="currentColor"/><circle cx="3.5" cy="11.5" r=".6" fill="currentColor"/></g><text x="88.0" y="209">Minhas marcações</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="76.0" y="240.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="262" r="15"/><g class="fm-ico" transform="translate(90.0 254)"><circle cx="7" cy="7" r="4"/><path d="m10 10 3.2 3.2"/></g><text x="122.0" y="267">Página de pesquisa</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="298.0" width="182" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="320" r="15"/><g class="fm-ico" transform="translate(124.0 312)"><rect x="2.8" y="4" width="10.4" height="9" rx="1.6"/><path d="M2.8 7.2h10.4M5.8 2.6V5M10.2 2.6V5"/></g><text x="156.0" y="325">Marcar consulta</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="144.0" y="356.0" width="189" height="44" rx="22"/><circle class="fm-ico-bg" cx="166.0" cy="378" r="15"/><g class="fm-ico" transform="translate(158.0 370)"><path d="M4 2.8v3.5a2.5 2.5 0 0 0 5 0V2.8M6.5 8.8v1.7a2.7 2.7 0 0 0 5.4 0V9"/><circle cx="11.9" cy="7.8" r="1.2"/></g><text x="190.0" y="383">Perfil do médico</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="414.0" width="258" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="436" r="15"/><g class="fm-ico" transform="translate(124.0 428)"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v3l2 1.5"/></g><text x="156.0" y="441">Selecionar hora na agenda</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="144.0" y="472.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="166.0" cy="494" r="15"/><g class="fm-ico" transform="translate(158.0 486)"><rect x="2.8" y="2.8" width="10.4" height="10.4" rx="2"/><path d="m5.5 8.2 1.8 1.8 3.3-3.6"/></g><text x="190.0" y="499">Página de marcação</text>
+                </g>
+                </svg>
+                <ul class="flowmap__legend" aria-hidden="true">
+                  <li><i class="lg-root"></i>Ponto de entrada</li>
+                  <li><i class="lg-node"></i>Página ou funcionalidade</li>
+                  
                 </ul>
-                <p class="sitemap__note">Bloquear, ativar, cancelar, aprovar e rejeitar pedem sempre confirmação. As ações sobre consultas e o detalhe das candidaturas abrem num painel lateral.</p>
-              </div>
+                <div class="flowmap__list"><ul><li>Home<ul><li>A minha conta</li><li>Meus documentos</li><li>Minhas marcações<ul><li>Página de pesquisa<ul><li>Marcar consulta → Perfil do médico</li><li>Selecionar hora na agenda do médico → Página de marcação de consulta</li></ul></li></ul></li></ul></li></ul></div>
+              </figure>
+              <figure class="flowmap" id="sm-admin" role="tabpanel" aria-labelledby="tab-admin" tabindex="0">
+                <figcaption class="sr-only">Arquitetura de informação do lado do administrador</figcaption>
+                <svg class="flowmap__svg flowmap__svg--wide" viewBox="0 0 1337 902" role="presentation" aria-hidden="true" focusable="false">
+                <defs><marker id="fm-adm-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1.5 1.5 6 4 1.5 6.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></marker><radialGradient id="fm-adm-glow"><stop offset="0" stop-color="var(--accent)" stop-opacity=".45"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
+                <path class="fm-edge fm-edge--solid" d="M36.0 198.0V224Q36.0 234 46.0 234H45.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M36.0 198.0V282Q36.0 292 46.0 292H45.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M70.0 314.0V340Q70.0 350 80.0 350H79.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M70.0 314.0V398Q70.0 408 80.0 408H79.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M70.0 314.0V456Q70.0 466 80.0 466H79.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M70.0 314.0V514Q70.0 524 80.0 524H79.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M36.0 198.0V572Q36.0 582 46.0 582H45.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M36.0 198.0V630Q36.0 640 46.0 640H45.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M365.0 198.0V224Q365.0 234 375.0 234H374.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M399.0 256.0V282Q399.0 292 409.0 292H408.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M433.0 314.0V340Q433.0 350 443.0 350H442.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M399.0 256.0V398Q399.0 408 409.0 408H408.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M399.0 256.0V456Q399.0 466 409.0 466H408.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M433.0 488.0V514Q433.0 524 443.0 524H442.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M365.0 198.0V572Q365.0 582 375.0 582H374.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M743.0 198.0V224Q743.0 234 753.0 234H752.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M777.0 256.0V282Q777.0 292 787.0 292H786.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M811.0 314.0V340Q811.0 350 821.0 350H820.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M811.0 314.0V398Q811.0 408 821.0 408H820.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M777.0 256.0V456Q777.0 466 787.0 466H786.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M777.0 256.0V514Q777.0 524 787.0 524H786.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M743.0 198.0V572Q743.0 582 753.0 582H752.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M777.0 604.0V630Q777.0 640 787.0 640H786.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M743.0 198.0V688Q743.0 698 753.0 698H752.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M777.0 720.0V746Q777.0 756 787.0 756H786.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M777.0 720.0V804Q777.0 814 787.0 814H786.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M1080.0 198.0V224Q1080.0 234 1090.0 234H1089.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M1114.0 256.0V282Q1114.0 292 1124.0 292H1123.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M668.5 78.0V110Q668.5 120 658.5 120H103.0Q93.0 120 93.0 130V151.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M668.5 78.0V110Q668.5 120 658.5 120H420.5Q410.5 120 410.5 130V151.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M668.5 78.0V110Q668.5 120 678.5 120H790.0Q800.0 120 800.0 130V151.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M668.5 78.0V110Q668.5 120 678.5 120H1115.5Q1125.5 120 1125.5 130V151.0" marker-end="url(#fm-adm-arrow)"/>
+                <path class="fm-edge fm-edge--dash" d="M914.5 836.0V878Q914.5 888 904.5 888H20Q10 888 10 878V302Q10 292 20 292H45.0" marker-end="url(#fm-adm-arrow)"/>
+                <g class="fm-node fm-node--main"><rect x="14.0" y="154.0" width="158" height="44" rx="22"/><circle class="fm-ico-bg" cx="36.0" cy="176" r="15"/><g class="fm-ico" transform="translate(28.0 168)"><circle cx="6" cy="6" r="2.2"/><path d="M2.2 13c.6-2 2-3 3.8-3s3.2 1 3.8 3"/><circle cx="11.2" cy="6.4" r="1.8"/><path d="M10.6 9.9c1.6 0 2.7.9 3.2 2.6"/></g><text x="60.0" y="181">Utilizadores</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="48.0" y="212.0" width="212" height="44" rx="22"/><circle class="fm-ico-bg" cx="70.0" cy="234" r="15"/><g class="fm-ico" transform="translate(62.0 226)"><rect x="2.5" y="4" width="11" height="8.5" rx="1.5"/><path d="m3 5 5 3.8L13 5"/></g><text x="94.0" y="239">Convidar utilizador</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="48.0" y="270.0" width="197" height="44" rx="22"/><circle class="fm-ico-bg" cx="70.0" cy="292" r="15"/><g class="fm-ico" transform="translate(62.0 284)"><path d="M10.5 3.2 12.8 5.5 6 12.3H3.7V10z"/></g><text x="94.0" y="297">Editar utilizador</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="82.0" y="328.0" width="189" height="44" rx="22"/><circle class="fm-ico-bg" cx="104.0" cy="350" r="15"/><g class="fm-ico" transform="translate(96.0 342)"><path d="M4 6.5h7.5L9.8 4.8M12 9.5H4.5l1.7 1.7"/></g><text x="128.0" y="355">Reenviar convite</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="82.0" y="386.0" width="243" height="44" rx="22"/><circle class="fm-ico-bg" cx="104.0" cy="408" r="15"/><g class="fm-ico" transform="translate(96.0 400)"><circle cx="5.5" cy="10.5" r="2.5"/><path d="m7.3 8.7 5.2-5.2M10.5 5.5l1.5 1.5"/></g><text x="128.0" y="413">Redefinir palavra-passe</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="82.0" y="444.0" width="152" height="44" rx="22"/><circle class="fm-ico-bg" cx="104.0" cy="466" r="15"/><g class="fm-ico" transform="translate(96.0 458)"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></g><text x="128.0" y="471">Bloquear</text>
+                <g class="fm-confirm"><circle cx="214.0" cy="466" r="8"/><path d="M214.0 462v4.2M214.0 469.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="82.0" y="502.0" width="136" height="44" rx="22"/><circle class="fm-ico-bg" cx="104.0" cy="524" r="15"/><g class="fm-ico" transform="translate(96.0 516)"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 4.8-1"/></g><text x="128.0" y="529">Ativar</text>
+                <g class="fm-confirm"><circle cx="198.0" cy="524" r="8"/><path d="M198.0 520v4.2M198.0 527.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="48.0" y="560.0" width="236" height="44" rx="22"/><circle class="fm-ico-bg" cx="70.0" cy="582" r="15"/><g class="fm-ico" transform="translate(62.0 574)"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></g><text x="94.0" y="587">Bloquear utilizador</text>
+                <g class="fm-confirm"><circle cx="264.0" cy="582" r="8"/><path d="M264.0 578v4.2M264.0 585.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="48.0" y="618.0" width="221" height="44" rx="22"/><circle class="fm-ico-bg" cx="70.0" cy="640" r="15"/><g class="fm-ico" transform="translate(62.0 632)"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 4.8-1"/></g><text x="94.0" y="645">Ativar utilizador</text>
+                <g class="fm-confirm"><circle cx="249.0" cy="640" r="8"/><path d="M249.0 636v4.2M249.0 643.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="343.0" y="154.0" width="135" height="44" rx="22"/><circle class="fm-ico-bg" cx="365.0" cy="176" r="15"/><g class="fm-ico" transform="translate(357.0 168)"><rect x="2.8" y="4" width="10.4" height="9" rx="1.6"/><path d="M2.8 7.2h10.4M5.8 2.6V5M10.2 2.6V5"/></g><text x="389.0" y="181">Consultas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="377.0" y="212.0" width="220" height="44" rx="22"/><circle class="fm-ico-bg" cx="399.0" cy="234" r="15"/><g class="fm-ico" transform="translate(391.0 226)"><path d="M4 2.8h5.5L12 5.3v7.9H4z"/><path d="M9.3 2.8v2.7H12"/></g><text x="423.0" y="239">Detalhes da consulta</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="411.0" y="270.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="433.0" cy="292" r="15"/><g class="fm-ico" transform="translate(425.0 284)"><path d="M4 6.5h7.5L9.8 4.8M12 9.5H4.5l1.7 1.7"/></g><text x="457.0" y="297">Reagendar consulta</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="445.0" y="328.0" width="258" height="44" rx="22"/><circle class="fm-ico-bg" cx="467.0" cy="350" r="15"/><g class="fm-ico" transform="translate(459.0 342)"><path d="M6 4.5h7M6 8h7M6 11.5h7"/><circle cx="3.5" cy="4.5" r=".6" fill="currentColor"/><circle cx="3.5" cy="8" r=".6" fill="currentColor"/><circle cx="3.5" cy="11.5" r=".6" fill="currentColor"/></g><text x="491.0" y="355">Processo de reagendamento</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="411.0" y="386.0" width="221" height="44" rx="22"/><circle class="fm-ico-bg" cx="433.0" cy="408" r="15"/><g class="fm-ico" transform="translate(425.0 400)"><circle cx="8" cy="8" r="5.5"/><path d="m6 6 4 4M10 6l-4 4"/></g><text x="457.0" y="413">Cancelar consulta</text>
+                <g class="fm-confirm"><circle cx="612.0" cy="408" r="8"/><path d="M612.0 404v4.2M612.0 411.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="411.0" y="444.0" width="220" height="44" rx="22"/><circle class="fm-ico-bg" cx="433.0" cy="466" r="15"/><g class="fm-ico" transform="translate(425.0 458)"><circle cx="8" cy="8" r="5.5"/><path d="M8 5.5v5M5.5 8h5"/></g><text x="457.0" y="471">Marcar nova consulta</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="445.0" y="502.0" width="258" height="44" rx="22"/><circle class="fm-ico-bg" cx="467.0" cy="524" r="15"/><g class="fm-ico" transform="translate(459.0 516)"><path d="M6 4.5h7M6 8h7M6 11.5h7"/><circle cx="3.5" cy="4.5" r=".6" fill="currentColor"/><circle cx="3.5" cy="8" r=".6" fill="currentColor"/><circle cx="3.5" cy="11.5" r=".6" fill="currentColor"/></g><text x="491.0" y="529">Processo de reagendamento</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="377.0" y="560.0" width="221" height="44" rx="22"/><circle class="fm-ico-bg" cx="399.0" cy="582" r="15"/><g class="fm-ico" transform="translate(391.0 574)"><circle cx="8" cy="8" r="5.5"/><path d="m6 6 4 4M10 6l-4 4"/></g><text x="423.0" y="587">Cancelar consulta</text>
+                <g class="fm-confirm"><circle cx="578.0" cy="582" r="8"/><path d="M578.0 578v4.2M578.0 585.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="721.0" y="154.0" width="158" height="44" rx="22"/><circle class="fm-ico-bg" cx="743.0" cy="176" r="15"/><g class="fm-ico" transform="translate(735.0 168)"><path d="M2.8 8.5 4.5 3.5h7l1.7 5v4H2.8z"/><path d="M2.8 8.5h3l.8 1.5h2.8l.8-1.5h3"/></g><text x="767.0" y="181">Candidaturas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="755.0" y="212.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="777.0" cy="234" r="15"/><g class="fm-ico" transform="translate(769.0 226)"><path d="M2.8 8.5 4.5 3.5h7l1.7 5v4H2.8z"/><path d="M2.8 8.5h3l.8 1.5h2.8l.8-1.5h3"/></g><text x="801.0" y="239">Novas candidaturas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="789.0" y="270.0" width="235" height="44" rx="22"/><circle class="fm-ico-bg" cx="811.0" cy="292" r="15"/><g class="fm-ico" transform="translate(803.0 284)"><path d="M1.8 8S4 3.8 8 3.8 14.2 8 14.2 8 12 12.2 8 12.2 1.8 8 1.8 8Z"/><circle cx="8" cy="8" r="1.8"/></g><text x="835.0" y="297">Detalhe da candidatura</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="823.0" y="328.0" width="144" height="44" rx="22"/><circle class="fm-ico-bg" cx="845.0" cy="350" r="15"/><g class="fm-ico" transform="translate(837.0 342)"><path d="M5.5 13H3.5V7.5h2M5.5 7.5 8 3a1.5 1.5 0 0 1 1.5 1.6L9.2 6.8H12a1.3 1.3 0 0 1 1.3 1.5l-.8 3.6A1.5 1.5 0 0 1 11 13H5.5"/></g><text x="869.0" y="355">Aprovar</text>
+                <g class="fm-confirm"><circle cx="947.0" cy="350" r="8"/><path d="M947.0 346v4.2M947.0 353.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="823.0" y="386.0" width="152" height="44" rx="22"/><circle class="fm-ico-bg" cx="845.0" cy="408" r="15"/><g class="fm-ico" transform="translate(837.0 400)"><path d="M5.5 3H3.5v5.5h2M5.5 8.5 8 13a1.5 1.5 0 0 0 1.5-1.6l-.3-2.2H12a1.3 1.3 0 0 0 1.3-1.5l-.8-3.6A1.5 1.5 0 0 0 11 3H5.5"/></g><text x="869.0" y="413">Rejeitar</text>
+                <g class="fm-confirm"><circle cx="955.0" cy="408" r="8"/><path d="M955.0 404v4.2M955.0 411.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="789.0" y="444.0" width="236" height="44" rx="22"/><circle class="fm-ico-bg" cx="811.0" cy="466" r="15"/><g class="fm-ico" transform="translate(803.0 458)"><path d="M5.5 13H3.5V7.5h2M5.5 7.5 8 3a1.5 1.5 0 0 1 1.5 1.6L9.2 6.8H12a1.3 1.3 0 0 1 1.3 1.5l-.8 3.6A1.5 1.5 0 0 1 11 13H5.5"/></g><text x="835.0" y="471">Aprovar candidatura</text>
+                <g class="fm-confirm"><circle cx="1005.0" cy="466" r="8"/><path d="M1005.0 462v4.2M1005.0 469.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="789.0" y="502.0" width="244" height="44" rx="22"/><circle class="fm-ico-bg" cx="811.0" cy="524" r="15"/><g class="fm-ico" transform="translate(803.0 516)"><path d="M5.5 3H3.5v5.5h2M5.5 8.5 8 13a1.5 1.5 0 0 0 1.5-1.6l-.3-2.2H12a1.3 1.3 0 0 0 1.3-1.5l-.8-3.6A1.5 1.5 0 0 0 11 3H5.5"/></g><text x="835.0" y="529">Rejeitar candidatura</text>
+                <g class="fm-confirm"><circle cx="1013.0" cy="524" r="8"/><path d="M1013.0 520v4.2M1013.0 527.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="755.0" y="560.0" width="243" height="44" rx="22"/><circle class="fm-ico-bg" cx="777.0" cy="582" r="15"/><g class="fm-ico" transform="translate(769.0 574)"><path d="M5.5 3H3.5v5.5h2M5.5 8.5 8 13a1.5 1.5 0 0 0 1.5-1.6l-.3-2.2H12a1.3 1.3 0 0 0 1.3-1.5l-.8-3.6A1.5 1.5 0 0 0 11 3H5.5"/></g><text x="801.0" y="587">Candidaturas rejeitadas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="789.0" y="618.0" width="235" height="44" rx="22"/><circle class="fm-ico-bg" cx="811.0" cy="640" r="15"/><g class="fm-ico" transform="translate(803.0 632)"><path d="M1.8 8S4 3.8 8 3.8 14.2 8 14.2 8 12 12.2 8 12.2 1.8 8 1.8 8Z"/><circle cx="8" cy="8" r="1.8"/></g><text x="835.0" y="645">Detalhe da candidatura</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="755.0" y="676.0" width="235" height="44" rx="22"/><circle class="fm-ico-bg" cx="777.0" cy="698" r="15"/><g class="fm-ico" transform="translate(769.0 690)"><path d="M5.5 13H3.5V7.5h2M5.5 7.5 8 3a1.5 1.5 0 0 1 1.5 1.6L9.2 6.8H12a1.3 1.3 0 0 1 1.3 1.5l-.8 3.6A1.5 1.5 0 0 1 11 13H5.5"/></g><text x="801.0" y="703">Candidaturas aprovadas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="789.0" y="734.0" width="235" height="44" rx="22"/><circle class="fm-ico-bg" cx="811.0" cy="756" r="15"/><g class="fm-ico" transform="translate(803.0 748)"><path d="M1.8 8S4 3.8 8 3.8 14.2 8 14.2 8 12 12.2 8 12.2 1.8 8 1.8 8Z"/><circle cx="8" cy="8" r="1.8"/></g><text x="835.0" y="761">Detalhe da candidatura</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="789.0" y="792.0" width="251" height="44" rx="22"/><circle class="fm-ico-bg" cx="811.0" cy="814" r="15"/><g class="fm-ico" transform="translate(803.0 806)"><circle cx="8" cy="5.8" r="2.5"/><path d="M3.3 13.3c.8-2.4 2.6-3.6 4.7-3.6s3.9 1.2 4.7 3.6"/></g><text x="835.0" y="819">Ver perfil do utilizador</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="1058.0" y="154.0" width="135" height="44" rx="22"/><circle class="fm-ico-bg" cx="1080.0" cy="176" r="15"/><g class="fm-ico" transform="translate(1072.0 168)"><path d="M11.5 4.3A4.2 4.2 0 0 0 5 8a4.2 4.2 0 0 0 6.5 3.7M3.5 7h5.5M3.5 9h5.5"/></g><text x="1104.0" y="181">Faturação</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="1092.0" y="212.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="1114.0" cy="234" r="15"/><g class="fm-ico" transform="translate(1106.0 226)"><path d="M4 2.8h5.5L12 5.3v7.9H4z"/><path d="M9.3 2.8v2.7H12"/></g><text x="1138.0" y="239">Detalhes da fatura</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="1126.0" y="270.0" width="197" height="44" rx="22"/><circle class="fm-ico-bg" cx="1148.0" cy="292" r="15"/><g class="fm-ico" transform="translate(1140.0 284)"><path d="M8 2.8v7M5.2 7.2 8 10l2.8-2.8M3 13h10"/></g><text x="1172.0" y="297">Transferir fatura</text>
+                </g>
+                <ellipse cx="668.5" cy="56" rx="207" ry="46" fill="url(#fm-adm-glow)"/>
+                <g class="fm-node fm-node--root"><rect x="547.0" y="34.0" width="243" height="44" rx="22"/><circle class="fm-ico-bg" cx="569.0" cy="56" r="15"/><g class="fm-ico" transform="translate(561.0 48)"><rect x="2.8" y="2.8" width="4.2" height="4.2" rx="1"/><rect x="9" y="2.8" width="4.2" height="4.2" rx="1"/><rect x="2.8" y="9" width="4.2" height="4.2" rx="1"/><rect x="9" y="9" width="4.2" height="4.2" rx="1"/></g><text x="593.0" y="61">Portal de administrador</text>
+                </g>
+                </svg>
+                <svg class="flowmap__svg flowmap__svg--tall" viewBox="0 0 430 1948" role="presentation" aria-hidden="true" focusable="false">
+                <defs><marker id="fm-adm-v-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1.5 1.5 6 4 1.5 6.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></marker><radialGradient id="fm-adm-v-glow"><stop offset="0" stop-color="var(--accent)" stop-opacity=".45"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
+                <path class="fm-edge fm-edge--solid" d="M30.0 52.0V78Q30.0 88 40.0 88H39.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 110.0V136Q64.0 146 74.0 146H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 110.0V194Q64.0 204 74.0 204H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 226.0V252Q98.0 262 108.0 262H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 226.0V310Q98.0 320 108.0 320H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 226.0V368Q98.0 378 108.0 378H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 226.0V426Q98.0 436 108.0 436H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 110.0V484Q64.0 494 74.0 494H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 110.0V542Q64.0 552 74.0 552H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M30.0 52.0V600Q30.0 610 40.0 610H39.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 632.0V658Q64.0 668 74.0 668H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 690.0V716Q98.0 726 108.0 726H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M132.0 748.0V774Q132.0 784 142.0 784H141.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 690.0V832Q98.0 842 108.0 842H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 690.0V890Q98.0 900 108.0 900H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M132.0 922.0V948Q132.0 958 142.0 958H141.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 632.0V1006Q64.0 1016 74.0 1016H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M30.0 52.0V1064Q30.0 1074 40.0 1074H39.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 1096.0V1122Q64.0 1132 74.0 1132H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 1154.0V1180Q98.0 1190 108.0 1190H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M132.0 1212.0V1238Q132.0 1248 142.0 1248H141.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M132.0 1212.0V1296Q132.0 1306 142.0 1306H141.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 1154.0V1354Q98.0 1364 108.0 1364H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 1154.0V1412Q98.0 1422 108.0 1422H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 1096.0V1470Q64.0 1480 74.0 1480H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 1502.0V1528Q98.0 1538 108.0 1538H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 1096.0V1586Q64.0 1596 74.0 1596H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 1618.0V1644Q98.0 1654 108.0 1654H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 1618.0V1702Q98.0 1712 108.0 1712H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M30.0 52.0V1760Q30.0 1770 40.0 1770H39.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M64.0 1792.0V1818Q64.0 1828 74.0 1828H73.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--solid" d="M98.0 1850.0V1876Q98.0 1886 108.0 1886H107.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <path class="fm-edge fm-edge--dash" d="M361.0 1712H412.0Q422.0 1712 422.0 1702V214Q422.0 204 412.0 204H276.0" marker-end="url(#fm-adm-v-arrow)"/>
+                <ellipse cx="129.5" cy="30" rx="207" ry="46" fill="url(#fm-adm-v-glow)"/>
+                <g class="fm-node fm-node--root"><rect x="8.0" y="8.0" width="243" height="44" rx="22"/><circle class="fm-ico-bg" cx="30.0" cy="30" r="15"/><g class="fm-ico" transform="translate(22.0 22)"><rect x="2.8" y="2.8" width="4.2" height="4.2" rx="1"/><rect x="9" y="2.8" width="4.2" height="4.2" rx="1"/><rect x="2.8" y="9" width="4.2" height="4.2" rx="1"/><rect x="9" y="9" width="4.2" height="4.2" rx="1"/></g><text x="54.0" y="35">Portal de administrador</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="42.0" y="66.0" width="158" height="44" rx="22"/><circle class="fm-ico-bg" cx="64.0" cy="88" r="15"/><g class="fm-ico" transform="translate(56.0 80)"><circle cx="6" cy="6" r="2.2"/><path d="M2.2 13c.6-2 2-3 3.8-3s3.2 1 3.8 3"/><circle cx="11.2" cy="6.4" r="1.8"/><path d="M10.6 9.9c1.6 0 2.7.9 3.2 2.6"/></g><text x="88.0" y="93">Utilizadores</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="124.0" width="212" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="146" r="15"/><g class="fm-ico" transform="translate(90.0 138)"><rect x="2.5" y="4" width="11" height="8.5" rx="1.5"/><path d="m3 5 5 3.8L13 5"/></g><text x="122.0" y="151">Convidar utilizador</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="182.0" width="197" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="204" r="15"/><g class="fm-ico" transform="translate(90.0 196)"><path d="M10.5 3.2 12.8 5.5 6 12.3H3.7V10z"/></g><text x="122.0" y="209">Editar utilizador</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="240.0" width="189" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="262" r="15"/><g class="fm-ico" transform="translate(124.0 254)"><path d="M4 6.5h7.5L9.8 4.8M12 9.5H4.5l1.7 1.7"/></g><text x="156.0" y="267">Reenviar convite</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="298.0" width="243" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="320" r="15"/><g class="fm-ico" transform="translate(124.0 312)"><circle cx="5.5" cy="10.5" r="2.5"/><path d="m7.3 8.7 5.2-5.2M10.5 5.5l1.5 1.5"/></g><text x="156.0" y="325">Redefinir palavra-passe</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="356.0" width="152" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="378" r="15"/><g class="fm-ico" transform="translate(124.0 370)"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></g><text x="156.0" y="383">Bloquear</text>
+                <g class="fm-confirm"><circle cx="242.0" cy="378" r="8"/><path d="M242.0 374v4.2M242.0 381.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="414.0" width="136" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="436" r="15"/><g class="fm-ico" transform="translate(124.0 428)"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 4.8-1"/></g><text x="156.0" y="441">Ativar</text>
+                <g class="fm-confirm"><circle cx="226.0" cy="436" r="8"/><path d="M226.0 432v4.2M226.0 439.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="472.0" width="236" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="494" r="15"/><g class="fm-ico" transform="translate(90.0 486)"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 5 0V7"/></g><text x="122.0" y="499">Bloquear utilizador</text>
+                <g class="fm-confirm"><circle cx="292.0" cy="494" r="8"/><path d="M292.0 490v4.2M292.0 497.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="530.0" width="221" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="552" r="15"/><g class="fm-ico" transform="translate(90.0 544)"><rect x="3.5" y="7" width="9" height="6.5" rx="1.5"/><path d="M5.5 7V5.2a2.5 2.5 0 0 1 4.8-1"/></g><text x="122.0" y="557">Ativar utilizador</text>
+                <g class="fm-confirm"><circle cx="277.0" cy="552" r="8"/><path d="M277.0 548v4.2M277.0 555.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="42.0" y="588.0" width="135" height="44" rx="22"/><circle class="fm-ico-bg" cx="64.0" cy="610" r="15"/><g class="fm-ico" transform="translate(56.0 602)"><rect x="2.8" y="4" width="10.4" height="9" rx="1.6"/><path d="M2.8 7.2h10.4M5.8 2.6V5M10.2 2.6V5"/></g><text x="88.0" y="615">Consultas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="646.0" width="220" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="668" r="15"/><g class="fm-ico" transform="translate(90.0 660)"><path d="M4 2.8h5.5L12 5.3v7.9H4z"/><path d="M9.3 2.8v2.7H12"/></g><text x="122.0" y="673">Detalhes da consulta</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="704.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="726" r="15"/><g class="fm-ico" transform="translate(124.0 718)"><path d="M4 6.5h7.5L9.8 4.8M12 9.5H4.5l1.7 1.7"/></g><text x="156.0" y="731">Reagendar consulta</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="144.0" y="762.0" width="258" height="44" rx="22"/><circle class="fm-ico-bg" cx="166.0" cy="784" r="15"/><g class="fm-ico" transform="translate(158.0 776)"><path d="M6 4.5h7M6 8h7M6 11.5h7"/><circle cx="3.5" cy="4.5" r=".6" fill="currentColor"/><circle cx="3.5" cy="8" r=".6" fill="currentColor"/><circle cx="3.5" cy="11.5" r=".6" fill="currentColor"/></g><text x="190.0" y="789">Processo de reagendamento</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="820.0" width="221" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="842" r="15"/><g class="fm-ico" transform="translate(124.0 834)"><circle cx="8" cy="8" r="5.5"/><path d="m6 6 4 4M10 6l-4 4"/></g><text x="156.0" y="847">Cancelar consulta</text>
+                <g class="fm-confirm"><circle cx="311.0" cy="842" r="8"/><path d="M311.0 838v4.2M311.0 845.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="878.0" width="220" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="900" r="15"/><g class="fm-ico" transform="translate(124.0 892)"><circle cx="8" cy="8" r="5.5"/><path d="M8 5.5v5M5.5 8h5"/></g><text x="156.0" y="905">Marcar nova consulta</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="144.0" y="936.0" width="258" height="44" rx="22"/><circle class="fm-ico-bg" cx="166.0" cy="958" r="15"/><g class="fm-ico" transform="translate(158.0 950)"><path d="M6 4.5h7M6 8h7M6 11.5h7"/><circle cx="3.5" cy="4.5" r=".6" fill="currentColor"/><circle cx="3.5" cy="8" r=".6" fill="currentColor"/><circle cx="3.5" cy="11.5" r=".6" fill="currentColor"/></g><text x="190.0" y="963">Processo de reagendamento</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="994.0" width="221" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="1016" r="15"/><g class="fm-ico" transform="translate(90.0 1008)"><circle cx="8" cy="8" r="5.5"/><path d="m6 6 4 4M10 6l-4 4"/></g><text x="122.0" y="1021">Cancelar consulta</text>
+                <g class="fm-confirm"><circle cx="277.0" cy="1016" r="8"/><path d="M277.0 1012v4.2M277.0 1019.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="42.0" y="1052.0" width="158" height="44" rx="22"/><circle class="fm-ico-bg" cx="64.0" cy="1074" r="15"/><g class="fm-ico" transform="translate(56.0 1066)"><path d="M2.8 8.5 4.5 3.5h7l1.7 5v4H2.8z"/><path d="M2.8 8.5h3l.8 1.5h2.8l.8-1.5h3"/></g><text x="88.0" y="1079">Candidaturas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="1110.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="1132" r="15"/><g class="fm-ico" transform="translate(90.0 1124)"><path d="M2.8 8.5 4.5 3.5h7l1.7 5v4H2.8z"/><path d="M2.8 8.5h3l.8 1.5h2.8l.8-1.5h3"/></g><text x="122.0" y="1137">Novas candidaturas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="1168.0" width="235" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="1190" r="15"/><g class="fm-ico" transform="translate(124.0 1182)"><path d="M1.8 8S4 3.8 8 3.8 14.2 8 14.2 8 12 12.2 8 12.2 1.8 8 1.8 8Z"/><circle cx="8" cy="8" r="1.8"/></g><text x="156.0" y="1195">Detalhe da candidatura</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="144.0" y="1226.0" width="144" height="44" rx="22"/><circle class="fm-ico-bg" cx="166.0" cy="1248" r="15"/><g class="fm-ico" transform="translate(158.0 1240)"><path d="M5.5 13H3.5V7.5h2M5.5 7.5 8 3a1.5 1.5 0 0 1 1.5 1.6L9.2 6.8H12a1.3 1.3 0 0 1 1.3 1.5l-.8 3.6A1.5 1.5 0 0 1 11 13H5.5"/></g><text x="190.0" y="1253">Aprovar</text>
+                <g class="fm-confirm"><circle cx="268.0" cy="1248" r="8"/><path d="M268.0 1244v4.2M268.0 1251.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="144.0" y="1284.0" width="152" height="44" rx="22"/><circle class="fm-ico-bg" cx="166.0" cy="1306" r="15"/><g class="fm-ico" transform="translate(158.0 1298)"><path d="M5.5 3H3.5v5.5h2M5.5 8.5 8 13a1.5 1.5 0 0 0 1.5-1.6l-.3-2.2H12a1.3 1.3 0 0 0 1.3-1.5l-.8-3.6A1.5 1.5 0 0 0 11 3H5.5"/></g><text x="190.0" y="1311">Rejeitar</text>
+                <g class="fm-confirm"><circle cx="276.0" cy="1306" r="8"/><path d="M276.0 1302v4.2M276.0 1309.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="1342.0" width="236" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="1364" r="15"/><g class="fm-ico" transform="translate(124.0 1356)"><path d="M5.5 13H3.5V7.5h2M5.5 7.5 8 3a1.5 1.5 0 0 1 1.5 1.6L9.2 6.8H12a1.3 1.3 0 0 1 1.3 1.5l-.8 3.6A1.5 1.5 0 0 1 11 13H5.5"/></g><text x="156.0" y="1369">Aprovar candidatura</text>
+                <g class="fm-confirm"><circle cx="326.0" cy="1364" r="8"/><path d="M326.0 1360v4.2M326.0 1367.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="1400.0" width="244" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="1422" r="15"/><g class="fm-ico" transform="translate(124.0 1414)"><path d="M5.5 3H3.5v5.5h2M5.5 8.5 8 13a1.5 1.5 0 0 0 1.5-1.6l-.3-2.2H12a1.3 1.3 0 0 0 1.3-1.5l-.8-3.6A1.5 1.5 0 0 0 11 3H5.5"/></g><text x="156.0" y="1427">Rejeitar candidatura</text>
+                <g class="fm-confirm"><circle cx="334.0" cy="1422" r="8"/><path d="M334.0 1418v4.2M334.0 1425.2v.4"/></g>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="1458.0" width="243" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="1480" r="15"/><g class="fm-ico" transform="translate(90.0 1472)"><path d="M5.5 3H3.5v5.5h2M5.5 8.5 8 13a1.5 1.5 0 0 0 1.5-1.6l-.3-2.2H12a1.3 1.3 0 0 0 1.3-1.5l-.8-3.6A1.5 1.5 0 0 0 11 3H5.5"/></g><text x="122.0" y="1485">Candidaturas rejeitadas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="1516.0" width="235" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="1538" r="15"/><g class="fm-ico" transform="translate(124.0 1530)"><path d="M1.8 8S4 3.8 8 3.8 14.2 8 14.2 8 12 12.2 8 12.2 1.8 8 1.8 8Z"/><circle cx="8" cy="8" r="1.8"/></g><text x="156.0" y="1543">Detalhe da candidatura</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="1574.0" width="235" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="1596" r="15"/><g class="fm-ico" transform="translate(90.0 1588)"><path d="M5.5 13H3.5V7.5h2M5.5 7.5 8 3a1.5 1.5 0 0 1 1.5 1.6L9.2 6.8H12a1.3 1.3 0 0 1 1.3 1.5l-.8 3.6A1.5 1.5 0 0 1 11 13H5.5"/></g><text x="122.0" y="1601">Candidaturas aprovadas</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="1632.0" width="235" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="1654" r="15"/><g class="fm-ico" transform="translate(124.0 1646)"><path d="M1.8 8S4 3.8 8 3.8 14.2 8 14.2 8 12 12.2 8 12.2 1.8 8 1.8 8Z"/><circle cx="8" cy="8" r="1.8"/></g><text x="156.0" y="1659">Detalhe da candidatura</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="1690.0" width="251" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="1712" r="15"/><g class="fm-ico" transform="translate(124.0 1704)"><circle cx="8" cy="5.8" r="2.5"/><path d="M3.3 13.3c.8-2.4 2.6-3.6 4.7-3.6s3.9 1.2 4.7 3.6"/></g><text x="156.0" y="1717">Ver perfil do utilizador</text>
+                </g>
+                <g class="fm-node fm-node--main"><rect x="42.0" y="1748.0" width="135" height="44" rx="22"/><circle class="fm-ico-bg" cx="64.0" cy="1770" r="15"/><g class="fm-ico" transform="translate(56.0 1762)"><path d="M11.5 4.3A4.2 4.2 0 0 0 5 8a4.2 4.2 0 0 0 6.5 3.7M3.5 7h5.5M3.5 9h5.5"/></g><text x="88.0" y="1775">Faturação</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="76.0" y="1806.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="98.0" cy="1828" r="15"/><g class="fm-ico" transform="translate(90.0 1820)"><path d="M4 2.8h5.5L12 5.3v7.9H4z"/><path d="M9.3 2.8v2.7H12"/></g><text x="122.0" y="1833">Detalhes da fatura</text>
+                </g>
+                <g class="fm-node fm-node--sub"><rect x="110.0" y="1864.0" width="197" height="44" rx="22"/><circle class="fm-ico-bg" cx="132.0" cy="1886" r="15"/><g class="fm-ico" transform="translate(124.0 1878)"><path d="M8 2.8v7M5.2 7.2 8 10l2.8-2.8M3 13h10"/></g><text x="156.0" y="1891">Transferir fatura</text>
+                </g>
+                </svg>
+                <ul class="flowmap__legend" aria-hidden="true">
+                  <li><i class="lg-root"></i>Ponto de entrada</li>
+                  <li><i class="lg-node"></i>Página ou funcionalidade</li>
+                  <li><i class="lg-confirm">!</i>Pede confirmação</li>
+                  <li><i class="lg-link"></i>Ligação entre secções</li>
+                </ul>
+                <div class="flowmap__list"><ul><li>Portal de administrador<ul><li>Utilizadores: Convidar utilizador; Editar utilizador (Reenviar convite, Redefinir palavra-passe, Bloquear, Ativar); Bloquear utilizador; Ativar utilizador</li><li>Consultas: Detalhes da consulta (Reagendar consulta, Cancelar consulta, Marcar nova consulta, ambos com processo de reagendamento); Cancelar consulta</li><li>Candidaturas: Novas candidaturas (Detalhe da candidatura com Aprovar e Rejeitar; Aprovar candidatura; Rejeitar candidatura); Candidaturas rejeitadas (Detalhe); Candidaturas aprovadas (Detalhe; Ver perfil do utilizador, que leva a Editar utilizador)</li><li>Faturação: Detalhes da fatura (Transferir fatura)</li></ul></li></ul><p>Bloquear, ativar, cancelar, aprovar e rejeitar pedem confirmação.</p></div>
+              </figure>
             </div>
 
             <p class="ia-source">Mapas originais: <a href="../assets/img/medclic/03-ai-medico.webp">médico</a> · <a href="../assets/img/medclic/04-ai-paciente.webp">paciente</a> · <a href="../assets/img/medclic/05-ai-administrador.webp">administrador</a></p>
