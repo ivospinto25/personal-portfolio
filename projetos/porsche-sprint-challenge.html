@@ -170,14 +170,173 @@
             </div>
           </section>
 
-          <section class="cs-section" id="definicao" aria-labelledby="definicao-t">
+          <section class="cs-section cs-section--wide" id="definicao" aria-labelledby="definicao-t">
             <span class="cs-section__num">03</span>
             <h2 id="definicao-t">Definição</h2>
             <h3>Arquitetura de informação</h3>
-            <figure class="figure reveal">
-              <img src="../assets/img/porsche/02-arquitetura-informacao.webp" width="1316" height="894" loading="lazy" decoding="async"
-                   alt="Mapa da app: Home e Definições no topo; abaixo News, Race, Calendário, Pilotos e Live; com subpáginas como Provas, Histórico de provas, Carros, Video Stream, Live Results, Resultados, Galeria e Circuito.">
+            <p>Cinco áreas principais a partir do início, com as provas, os pilotos e o direto a abrir em subpáginas.</p>
+            <figure class="flowmap reveal" aria-labelledby="ia-psci-t">
+              <figcaption class="sr-only" id="ia-psci-t">Arquitetura de informação da app PSCI</figcaption>
+              <svg class="flowmap__svg flowmap__svg--wide" viewBox="0 0 1180 530" role="presentation" aria-hidden="true" focusable="false">
+<defs><marker id="fm-arrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1.5 1.5 6 4 1.5 6.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></marker><radialGradient id="fm-glow"><stop offset="0" stop-color="var(--accent)" stop-opacity=".45"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
+<path class="fm-edge fm-edge--solid" d="M525 78.0V110Q525 120 515 120H100Q90 120 90 130V161.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M525 78.0V110Q525 120 515 120H265Q255 120 255 130V161.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M525 78.0V110Q525 120 515 120H450Q440 120 440 130V161.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M525 78.0V110Q525 120 535 120H670Q680 120 680 130V161.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M525 78.0V110Q525 120 535 120H950Q960 120 960 130V161.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M440 208.0V281.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M680 208.0V246Q680 256 670 256H628Q618 256 618 266V281.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M680 208.0V246Q680 256 690 256H794Q804 256 804 266V281.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M440 328.0V366Q440 376 430 376H260Q250 376 250 386V411.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M440 328.0V411.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M440 328.0V366Q440 376 450 376H615Q625 376 625 386V411.0" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M935 208.0V276Q935 286 945 286H959" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--solid" d="M935 208.0V356Q935 366 945 366H959" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--dash" d="M581.0 56H685.5" marker-end="url(#fm-arrow)"/>
+<path class="fm-edge fm-edge--dash" d="M1062 388.0V496Q1062 506 1052 506H260Q250 506 250 496V461.0" marker-end="url(#fm-arrow)"/>
+<ellipse cx="525" cy="56" rx="95" ry="46" fill="url(#fm-glow)"/>
+<g class="fm-node fm-node--root">
+<rect x="469.0" y="34.0" width="112" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="491.0" cy="56" r="15"/>
+<g class="fm-ico" transform="translate(483.0 48)"><path d="M3 8 8 3.5 13 8M4.6 7v5.5h6.8V7"/></g>
+<text x="515.0" y="61">Início</text>
+</g>
+<g class="fm-node fm-node--aside">
+<rect x="688.5" y="34.0" width="143" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="710.5" cy="56" r="15"/>
+<g class="fm-ico" transform="translate(702.5 48)"><circle cx="8" cy="8" r="2"/><path d="M8 2.5v1.6M8 11.9v1.6M2.5 8h1.6M11.9 8h1.6M4.1 4.1l1.1 1.1M10.8 10.8l1.1 1.1M4.1 11.9l1.1-1.1M10.8 5.2l1.1-1.1"/></g>
+<text x="734.5" y="61">Definições</text>
+</g>
+<g class="fm-node fm-node--main">
+<rect x="26.0" y="164.0" width="128" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="48.0" cy="186" r="15"/>
+<g class="fm-ico" transform="translate(40.0 178)"><rect x="2.5" y="3.5" width="11" height="9" rx="1.5"/><path d="M5 6.5h6M5 9h6M5 11h3.5"/></g>
+<text x="72.0" y="191">Notícias</text>
+</g>
+<g class="fm-node fm-node--main">
+<rect x="195.0" y="164.0" width="120" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="217.0" cy="186" r="15"/>
+<g class="fm-ico" transform="translate(209.0 178)"><path d="M4 13.5V2.8M4 3.3h7.5L10 6l1.5 2.7H4"/></g>
+<text x="241.0" y="191">Corrida</text>
+</g>
+<g class="fm-node fm-node--main">
+<rect x="368.5" y="164.0" width="143" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="390.5" cy="186" r="15"/>
+<g class="fm-ico" transform="translate(382.5 178)"><rect x="2.8" y="4" width="10.4" height="9" rx="1.6"/><path d="M2.8 7.2h10.4M5.8 2.6V5M10.2 2.6V5"/></g>
+<text x="414.5" y="191">Calendário</text>
+</g>
+<g class="fm-node fm-node--main">
+<rect x="620.0" y="164.0" width="120" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="642.0" cy="186" r="15"/>
+<g class="fm-ico" transform="translate(634.0 178)"><circle cx="8" cy="5.8" r="2.5"/><path d="M3.3 13.3c.8-2.4 2.6-3.6 4.7-3.6s3.9 1.2 4.7 3.6"/></g>
+<text x="666.0" y="191">Pilotos</text>
+</g>
+<g class="fm-node fm-node--main">
+<rect x="904.0" y="164.0" width="112" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="926.0" cy="186" r="15"/>
+<g class="fm-ico" transform="translate(918.0 178)"><circle cx="8" cy="8" r="1.6" fill="currentColor" stroke="none"/><path d="M5.2 5.2a4 4 0 0 0 0 5.6M10.8 5.2a4 4 0 0 1 0 5.6M3.4 3.4a6.5 6.5 0 0 0 0 9.2M12.6 3.4a6.5 6.5 0 0 1 0 9.2"/></g>
+<text x="950.0" y="191">Direto</text>
+</g>
+<g class="fm-node fm-node--sub">
+<rect x="384.0" y="284.0" width="112" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="406.0" cy="306" r="15"/>
+<g class="fm-ico" transform="translate(398.0 298)"><path d="M6 4.5h7M6 8h7M6 11.5h7"/><circle cx="3.5" cy="4.5" r=".6" fill="currentColor"/><circle cx="3.5" cy="8" r=".6" fill="currentColor"/><circle cx="3.5" cy="11.5" r=".6" fill="currentColor"/></g>
+<text x="430.0" y="311">Provas</text>
+</g>
+<g class="fm-node fm-node--sub">
+<rect x="512.0" y="284.0" width="212" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="534.0" cy="306" r="15"/>
+<g class="fm-ico" transform="translate(526.0 298)"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v3l2 1.5"/></g>
+<text x="558.0" y="311">Histórico de provas</text>
+</g>
+<g class="fm-node fm-node--sub">
+<rect x="748.0" y="284.0" width="112" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="770.0" cy="306" r="15"/>
+<g class="fm-ico" transform="translate(762.0 298)"><path d="M2.5 11V8.8L4 5.5h8l1.5 3.3V11H2.5Z"/><path d="M4.5 11v1.6M11.5 11v1.6M2.5 8.8h11"/></g>
+<text x="794.0" y="311">Carros</text>
+</g>
+<g class="fm-node fm-node--sub">
+<rect x="962.0" y="264.0" width="151" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="984.0" cy="286" r="15"/>
+<g class="fm-ico" transform="translate(976.0 278)"><rect x="2.5" y="3.5" width="11" height="9" rx="2"/><path d="M7 6.2v3.6L10 8 7 6.2Z" fill="currentColor"/></g>
+<text x="1008.0" y="291">Transmissão</text>
+</g>
+<g class="fm-node fm-node--sub">
+<rect x="962.0" y="344.0" width="205" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="984.0" cy="366" r="15"/>
+<g class="fm-ico" transform="translate(976.0 358)"><circle cx="8" cy="9" r="4.5"/><path d="M8 9V6.6M6.5 2.5h3"/></g>
+<text x="1008.0" y="371">Resultados ao vivo</text>
+</g>
+<g class="fm-node fm-node--sub">
+<rect x="178.5" y="414.0" width="143" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="200.5" cy="436" r="15"/>
+<g class="fm-ico" transform="translate(192.5 428)"><path d="M5 3h6v3.2a3 3 0 0 1-6 0V3ZM8 9.3v2.4M5.6 13.2h4.8M5 4.3H3.3a1.8 1.8 0 0 0 1.9 2.4M11 4.3h1.7a1.8 1.8 0 0 1-1.9 2.4"/></g>
+<text x="224.5" y="441">Resultados</text>
+</g>
+<g class="fm-node fm-node--sub">
+<rect x="380.0" y="414.0" width="120" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="402.0" cy="436" r="15"/>
+<g class="fm-ico" transform="translate(394.0 428)"><rect x="2.5" y="3.5" width="11" height="9" rx="1.6"/><circle cx="6" cy="6.6" r="1"/><path d="m3 12 3.4-3 2.4 2 2-1.6 2.7 2.4"/></g>
+<text x="426.0" y="441">Galeria</text>
+</g>
+<g class="fm-node fm-node--sub">
+<rect x="561.0" y="414.0" width="128" height="44" rx="22"/>
+<circle class="fm-ico-bg" cx="583.0" cy="436" r="15"/>
+<g class="fm-ico" transform="translate(575.0 428)"><circle cx="4" cy="12" r="1.5"/><circle cx="12" cy="4" r="1.5"/><path d="M5.5 12H9a2 2 0 0 0 0-4H7a2 2 0 0 1 0-4h3.5"/></g>
+<text x="607.0" y="441">Circuito</text>
+</g>
+</svg>
+<svg class="flowmap__svg flowmap__svg--tall" viewBox="0 0 372 846" role="presentation" aria-hidden="true" focusable="false">
+<defs><marker id="fm-arrow-v" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M1.5 1.5 6 4 1.5 6.5" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></marker><radialGradient id="fm-glow-v"><stop offset="0" stop-color="var(--accent)" stop-opacity=".45"/><stop offset="1" stop-color="var(--accent)" stop-opacity="0"/></radialGradient></defs>
+<path class="fm-edge fm-edge--solid" d="M30 52.0V78Q30 88 40 88H39" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M30 52.0V136Q30 146 40 146H39" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M30 52.0V194Q30 204 40 204H39" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M64 226.0V252Q64 262 74 262H73" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M98 284.0V310Q98 320 108 320H107" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M98 284.0V368Q98 378 108 378H107" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M98 284.0V426Q98 436 108 436H107" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M30 52.0V484Q30 494 40 494H39" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M64 516.0V542Q64 552 74 552H73" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M64 516.0V600Q64 610 74 610H73" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M30 52.0V658Q30 668 40 668H39" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M64 690.0V716Q64 726 74 726H73" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--solid" d="M64 690.0V774Q64 784 74 784H73" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--dash" d="M120 30H218" marker-end="url(#fm-arrow-v)"/>
+<path class="fm-edge fm-edge--dash" d="M281 784H356Q366 784 366 774V330Q366 320 356 320H256" marker-end="url(#fm-arrow-v)"/>
+<ellipse cx="64.0" cy="30" rx="90" ry="40" fill="url(#fm-glow-v)"/>
+<g class="fm-node fm-node--root"><rect x="8" y="8.0" width="112" height="44" rx="22"/><circle class="fm-ico-bg" cx="30" cy="30" r="15"/><g class="fm-ico" transform="translate(22 22)"><path d="M3 8 8 3.5 13 8M4.6 7v5.5h6.8V7"/></g><text x="54" y="35">Início</text></g>
+<g class="fm-node fm-node--main"><rect x="42" y="66.0" width="128" height="44" rx="22"/><circle class="fm-ico-bg" cx="64" cy="88" r="15"/><g class="fm-ico" transform="translate(56 80)"><rect x="2.5" y="3.5" width="11" height="9" rx="1.5"/><path d="M5 6.5h6M5 9h6M5 11h3.5"/></g><text x="88" y="93">Notícias</text></g>
+<g class="fm-node fm-node--main"><rect x="42" y="124.0" width="120" height="44" rx="22"/><circle class="fm-ico-bg" cx="64" cy="146" r="15"/><g class="fm-ico" transform="translate(56 138)"><path d="M4 13.5V2.8M4 3.3h7.5L10 6l1.5 2.7H4"/></g><text x="88" y="151">Corrida</text></g>
+<g class="fm-node fm-node--main"><rect x="42" y="182.0" width="143" height="44" rx="22"/><circle class="fm-ico-bg" cx="64" cy="204" r="15"/><g class="fm-ico" transform="translate(56 196)"><rect x="2.8" y="4" width="10.4" height="9" rx="1.6"/><path d="M2.8 7.2h10.4M5.8 2.6V5M10.2 2.6V5"/></g><text x="88" y="209">Calendário</text></g>
+<g class="fm-node fm-node--sub"><rect x="76" y="240.0" width="112" height="44" rx="22"/><circle class="fm-ico-bg" cx="98" cy="262" r="15"/><g class="fm-ico" transform="translate(90 254)"><path d="M6 4.5h7M6 8h7M6 11.5h7"/><circle cx="3.5" cy="4.5" r=".6" fill="currentColor"/><circle cx="3.5" cy="8" r=".6" fill="currentColor"/><circle cx="3.5" cy="11.5" r=".6" fill="currentColor"/></g><text x="122" y="267">Provas</text></g>
+<g class="fm-node fm-node--sub"><rect x="110" y="298.0" width="143" height="44" rx="22"/><circle class="fm-ico-bg" cx="132" cy="320" r="15"/><g class="fm-ico" transform="translate(124 312)"><path d="M5 3h6v3.2a3 3 0 0 1-6 0V3ZM8 9.3v2.4M5.6 13.2h4.8M5 4.3H3.3a1.8 1.8 0 0 0 1.9 2.4M11 4.3h1.7a1.8 1.8 0 0 1-1.9 2.4"/></g><text x="156" y="325">Resultados</text></g>
+<g class="fm-node fm-node--sub"><rect x="110" y="356.0" width="120" height="44" rx="22"/><circle class="fm-ico-bg" cx="132" cy="378" r="15"/><g class="fm-ico" transform="translate(124 370)"><rect x="2.5" y="3.5" width="11" height="9" rx="1.6"/><circle cx="6" cy="6.6" r="1"/><path d="m3 12 3.4-3 2.4 2 2-1.6 2.7 2.4"/></g><text x="156" y="383">Galeria</text></g>
+<g class="fm-node fm-node--sub"><rect x="110" y="414.0" width="128" height="44" rx="22"/><circle class="fm-ico-bg" cx="132" cy="436" r="15"/><g class="fm-ico" transform="translate(124 428)"><circle cx="4" cy="12" r="1.5"/><circle cx="12" cy="4" r="1.5"/><path d="M5.5 12H9a2 2 0 0 0 0-4H7a2 2 0 0 1 0-4h3.5"/></g><text x="156" y="441">Circuito</text></g>
+<g class="fm-node fm-node--main"><rect x="42" y="472.0" width="120" height="44" rx="22"/><circle class="fm-ico-bg" cx="64" cy="494" r="15"/><g class="fm-ico" transform="translate(56 486)"><circle cx="8" cy="5.8" r="2.5"/><path d="M3.3 13.3c.8-2.4 2.6-3.6 4.7-3.6s3.9 1.2 4.7 3.6"/></g><text x="88" y="499">Pilotos</text></g>
+<g class="fm-node fm-node--sub"><rect x="76" y="530.0" width="212" height="44" rx="22"/><circle class="fm-ico-bg" cx="98" cy="552" r="15"/><g class="fm-ico" transform="translate(90 544)"><circle cx="8" cy="8" r="5.5"/><path d="M8 5v3l2 1.5"/></g><text x="122" y="557">Histórico de provas</text></g>
+<g class="fm-node fm-node--sub"><rect x="76" y="588.0" width="112" height="44" rx="22"/><circle class="fm-ico-bg" cx="98" cy="610" r="15"/><g class="fm-ico" transform="translate(90 602)"><path d="M2.5 11V8.8L4 5.5h8l1.5 3.3V11H2.5Z"/><path d="M4.5 11v1.6M11.5 11v1.6M2.5 8.8h11"/></g><text x="122" y="615">Carros</text></g>
+<g class="fm-node fm-node--main"><rect x="42" y="646.0" width="112" height="44" rx="22"/><circle class="fm-ico-bg" cx="64" cy="668" r="15"/><g class="fm-ico" transform="translate(56 660)"><circle cx="8" cy="8" r="1.6" fill="currentColor" stroke="none"/><path d="M5.2 5.2a4 4 0 0 0 0 5.6M10.8 5.2a4 4 0 0 1 0 5.6M3.4 3.4a6.5 6.5 0 0 0 0 9.2M12.6 3.4a6.5 6.5 0 0 1 0 9.2"/></g><text x="88" y="673">Direto</text></g>
+<g class="fm-node fm-node--sub"><rect x="76" y="704.0" width="151" height="44" rx="22"/><circle class="fm-ico-bg" cx="98" cy="726" r="15"/><g class="fm-ico" transform="translate(90 718)"><rect x="2.5" y="3.5" width="11" height="9" rx="2"/><path d="M7 6.2v3.6L10 8 7 6.2Z" fill="currentColor"/></g><text x="122" y="731">Transmissão</text></g>
+<g class="fm-node fm-node--sub"><rect x="76" y="762.0" width="205" height="44" rx="22"/><circle class="fm-ico-bg" cx="98" cy="784" r="15"/><g class="fm-ico" transform="translate(90 776)"><circle cx="8" cy="9" r="4.5"/><path d="M8 9V6.6M6.5 2.5h3"/></g><text x="122" y="789">Resultados ao vivo</text></g>
+<g class="fm-node fm-node--aside"><rect x="221" y="8.0" width="143" height="44" rx="22"/><circle class="fm-ico-bg" cx="243" cy="30" r="15"/><g class="fm-ico" transform="translate(235 22)"><circle cx="8" cy="8" r="2"/><path d="M8 2.5v1.6M8 11.9v1.6M2.5 8h1.6M11.9 8h1.6M4.1 4.1l1.1 1.1M10.8 10.8l1.1 1.1M4.1 11.9l1.1-1.1M10.8 5.2l1.1-1.1"/></g><text x="267" y="35">Definições</text></g>
+</svg>
+              <ul class="flowmap__legend" aria-hidden="true">
+                <li><i class="lg-root"></i>Ponto de entrada</li>
+                <li><i class="lg-node"></i>Página ou subpágina</li>
+                <li><i class="lg-link"></i>Atalho ou ligação entre secções</li>
+              </ul>
+              <div class="flowmap__list">
+                <div class="sitemap__top"><span class="sitemap__page">Início</span><p class="sitemap__who">Atalho para Definições</p></div>
+                <ul class="sitemap__cols">
+                  <li class="sitemap__col"><h5>Notícias</h5></li>
+                  <li class="sitemap__col"><h5>Corrida</h5></li>
+                  <li class="sitemap__col"><h5>Calendário</h5><ul><li>Provas<small>Resultados, galeria e circuito</small></li></ul></li>
+                  <li class="sitemap__col"><h5>Pilotos</h5><ul><li>Histórico de provas</li><li>Carros</li></ul></li>
+                  <li class="sitemap__col"><h5>Direto</h5><ul><li>Transmissão</li><li>Resultados ao vivo<small>Liga aos resultados das provas</small></li></ul></li>
+                </ul>
+              </div>
             </figure>
+            <p class="ia-source">Mapa original: <a href="../assets/img/porsche/02-arquitetura-informacao.webp">ver imagem</a></p>
           </section>
 
           <section class="cs-section" id="design" aria-labelledby="design-t">

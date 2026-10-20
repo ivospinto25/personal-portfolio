@@ -635,7 +635,46 @@ button { font: inherit; color: inherit; }
 
 /* As secções com infográficos usam a largura toda da coluna */
 .cs-section--wide { max-width: none; }
-.cs-section--wide > :not(.ia):not(.ia-group) { max-width: 760px; }
+.cs-section--wide > :not(.ia):not(.ia-group):not(.flowmap) { max-width: 760px; }
+
+/* Diagrama de fluxo (nós em pílula, ícones e ligações) */
+.flowmap {
+  --fm-line: color-mix(in srgb, var(--fg) 28%, transparent);
+  position: relative; container-type: inline-size; display: grid; gap: var(--s4);
+  padding: clamp(16px, 2.4vw, 28px); border: 1px solid var(--line); border-radius: var(--r-xl);
+  background:
+    radial-gradient(60% 70% at 45% 0%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 70%),
+    var(--surface);
+  overflow: hidden;
+}
+.flowmap__svg { display: block; width: 100%; height: auto; color: var(--fm-line); }
+.fm-edge { fill: none; stroke: var(--fm-line); stroke-width: 1.3; }
+.fm-edge--dash { stroke: var(--accent); stroke-dasharray: 4 5; }
+.fm-node rect { fill: var(--bg); stroke: var(--line); stroke-width: 1; }
+.fm-node--main rect { stroke: color-mix(in srgb, var(--fg) 35%, transparent); }
+.fm-node--aside rect { stroke-dasharray: 4 3; }
+.fm-node text { font-family: var(--font-sans); font-size: 15px; font-weight: 500; fill: var(--fg); }
+.fm-ico-bg { fill: var(--surface2); }
+.fm-ico { fill: none; stroke: var(--fg); stroke-width: 1.3; stroke-linecap: round; stroke-linejoin: round; color: var(--fg); }
+.fm-node--root rect { fill: var(--accent); stroke: var(--accent); }
+.fm-node--root text { fill: #0A0A0A; font-weight: 600; }
+.fm-node--root .fm-ico-bg { fill: rgba(255, 255, 255, .35); }
+.fm-node--root .fm-ico { stroke: #0A0A0A; color: #0A0A0A; }
+.flowmap__legend { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); list-style: none; margin: 0; padding: 0; }
+.cs-section .flowmap__legend li { display: inline-flex; align-items: center; gap: var(--s2); font-size: 13px; color: var(--text2); }
+.flowmap__legend i { display: inline-block; flex: none; }
+.lg-root { width: 22px; height: 12px; border-radius: 6px; background: var(--accent); }
+.lg-node { width: 22px; height: 12px; border-radius: 6px; border: 1px solid color-mix(in srgb, var(--fg) 35%, transparent); background: var(--bg); }
+.lg-link { width: 24px; border-top: 1.5px dashed var(--accent); }
+/* Lista só para leitores de ecrã; o diagrama troca entre horizontal e vertical consoante o espaço */
+.flowmap__list { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.flowmap__svg--tall { display: none; max-width: 420px; justify-self: center; }
+@container (max-width: 760px) {
+  .flowmap__svg--wide { display: none; }
+  .flowmap__svg--tall { display: block; }
+  .flowmap__legend { gap: var(--s2) var(--s4); }
+}
+
 .ia-group { display: grid; gap: var(--s5); }
 
 .next-project { border-top: 1px solid var(--line); padding-block: clamp(56px, 8vw, 96px); }
