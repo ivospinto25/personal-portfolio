@@ -326,7 +326,7 @@ button { font: inherit; color: inherit; }
 .about { display: grid; gap: var(--s6); }
 .about__text { display: grid; gap: var(--s5); align-content: center; }
 .about__text .h1 { margin-top: calc(-1 * var(--s2)); }
-.about__photo { order: -1; width: 100%; max-width: 420px; }
+.about__photo { width: 100%; max-width: 420px; }
 .about__photo img, .about__placeholder { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--r-xl); border: 1px solid var(--line); }
 .about__placeholder {
   display: grid; place-items: center;
@@ -335,7 +335,7 @@ button { font: inherit; color: inherit; }
 }
 @media (min-width: 900px) {
   .about { grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: var(--s8); align-items: center; }
-  .about__photo { order: 0; max-width: none; }
+  .about__photo { max-width: none; }
 }
 
 /* ---------- Competências ---------- */
