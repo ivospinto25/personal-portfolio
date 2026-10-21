@@ -151,7 +151,7 @@
           </section>
 
           <!-- 01 -->
-          <section class="cs-section" id="problema" aria-labelledby="problema-t">
+          <section class="cs-section cs-section--wide" id="problema" aria-labelledby="problema-t">
             <span class="cs-section__num">01</span>
             <h2 id="problema-t">O problema</h2>
             <p>Cada produto da UMAIN WORKS nasceu sozinho: com a sua interface, o seu login, o seu vocabulário de ações. Para quem usava vários, não havia uma shell comum.</p>
@@ -161,9 +161,14 @@
             </blockquote>
 
             <h3>Dois nomes para a mesma coisa</h3>
-            <figure class="figure reveal">
-              <img src="../assets/img/cupola/03-dois-nomes.webp" width="1920" height="987" loading="lazy" decoding="async"
-                   alt="Slide «Two names for the same thing»: num primeiro mercado, quatro produtos (ITS, RiskRadar, AI LMS, LevelUP) receberam o nome Lumina Enterprise; depois, as universidades quiseram os mesmos quatro e receberam outro nome, Lumina Academic.">
+            <figure class="holo reveal" aria-label="Dois nomes para a mesma coisa">
+              <div class="holo__bar" aria-hidden="true"><span>Cupola · Dois nomes</span><span class="holo__live">Ligado</span></div>
+              <ol class="hnames">
+                <li class="hglass"><span class="hnames__n">01</span><div class="hnames__t">Num primeiro mercado, as empresas queriam uma <em>plataforma de formação</em>.</div></li>
+                <li class="hglass"><span class="hnames__n">02</span><div class="hnames__t">Não tínhamos um produto. Tínhamos quatro.<div class="hnames__chips"><span class="hchip">ITS</span><span class="hchip">RiskRadar</span><span class="hchip">AI LMS</span><span class="hchip">LevelUP</span></div></div></li>
+                <li class="hglass"><span class="hnames__n">03</span><div class="hnames__t">Demos-lhe um nome.<div class="hnames__chips"><span class="hchip hchip--glow">Lumina Enterprise</span></div></div></li>
+                <li class="hglass"><span class="hnames__n">04</span><div class="hnames__t">Depois, as universidades quiseram os mesmos quatro. Demos-lhe outro nome — exatamente a mesma coisa, com outro layout.<div class="hnames__chips"><span class="hchip hchip--glow">Lumina Academic</span></div></div></li>
+              </ol>
             </figure>
             <p>Dar um único nome ao que vendemos é a decisão certa. O cliente precisa de ouvir uma coisa, não quatro.</p>
             <ul>
@@ -176,13 +181,30 @@
           </section>
 
           <!-- 02 -->
-          <section class="cs-section" id="o-que-e-comum" aria-labelledby="comum-t">
+          <section class="cs-section cs-section--wide" id="o-que-e-comum" aria-labelledby="comum-t">
             <span class="cs-section__num">02</span>
             <h2 id="comum-t">Encontrar o que é comum</h2>
             <p>Em conjunto com cada Product Owner, mapeámos todas as funcionalidades de todos os módulos. Antes de desenhar qualquer ecrã, fizemos um levantamento com todos os POs para definir o que cada módulo permite ao utilizador fazer. Foi desse trabalho partilhado que nasceu o conceito de <strong>famílias de ações</strong>: as mesmas intenções, nomeadas uma vez, para todos os produtos.</p>
-            <figure class="figure reveal">
-              <img src="../assets/img/cupola/04-inventario-acoes.webp" width="1920" height="987" loading="lazy" decoding="async"
-                   alt="Gráfico de barras «195 actions, module by module»: Vera tem o maior número de ações, seguida de Voicis Core e Voicis AI; ITS tem o menor.">
+            <figure class="holo reveal" aria-labelledby="hinv-cap">
+              <div class="holo__bar" aria-hidden="true"><span>Cupola · Inventário de ações</span><span class="holo__live">Ligado</span></div>
+              <div class="hinv__head">
+                <div class="hinv__big"><span class="hinv__num" data-count="195">195</span><span class="hinv__lbl">ações<br>11 módulos</span></div>
+                <div class="hinv__legend" aria-hidden="true"><span class="hchip"><i class="lg-solid"></i>formato normalizado · 93</span><span class="hchip"><i class="lg-striped"></i>outra granularidade · 102</span></div>
+              </div>
+              <ul class="hbars">
+                <li class="hbar--alt" style="--v:50;--i:0"><span class="hbar__name">Vera</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">50</span></li>
+                <li class="hbar--alt" style="--v:30;--i:1"><span class="hbar__name">Voicis Core</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">30</span></li>
+                <li class="hbar--alt" style="--v:22;--i:2"><span class="hbar__name">Voicis AI</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">22</span></li>
+                <li class="" style="--v:15;--i:3"><span class="hbar__name">BOMify</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">15</span></li>
+                <li class="" style="--v:15;--i:4"><span class="hbar__name">QuoteGenius</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">15</span></li>
+                <li class="" style="--v:14;--i:5"><span class="hbar__name">DocuMiner</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">14</span></li>
+                <li class="" style="--v:13;--i:6"><span class="hbar__name">LeadFlow</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">13</span></li>
+                <li class="" style="--v:12;--i:7"><span class="hbar__name">RiskRadar</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">12</span></li>
+                <li class="" style="--v:10;--i:8"><span class="hbar__name">AI LMS</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">10</span></li>
+                <li class="" style="--v:8;--i:9"><span class="hbar__name">ConversAI</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">8</span></li>
+                <li class="" style="--v:6;--i:10"><span class="hbar__name">ITS</span><span class="hbar__track"><span class="hbar__fill"></span></span><span class="hbar__val">6</span></li>
+              </ul>
+              <figcaption class="holo__note" id="hinv-cap">Ações por módulo. Os 8 módulos com formato normalizado somam 93; Vera, Voicis Core e Voicis AI foram descritos com outra granularidade.</figcaption>
             </figure>
             <ul>
               <li><strong>195 ações em 11 módulos.</strong> 8 módulos usaram o formato normalizado (93 ações); Vera, Voicis Core e Voicis AI foram descritos com outra granularidade, por isso pesam mais no total.</li>
@@ -190,9 +212,30 @@
             </ul>
 
             <h3>As 195 ações cabem em 15 famílias</h3>
-            <figure class="figure reveal">
-              <img src="../assets/img/cupola/05-familias-acoes.webp" width="1920" height="1080" loading="lazy" decoding="async"
-                   alt="Slide «Interactions grouped by family» com cartões para cada família de ações, como Generation by agent, Manual creation, Review/Edit, Validation/Decision, Send/Publish, Conversation, Lifecycle, Data management, Filter/Search, Export, Import, View/Navigation e Cupola.">
+            <figure class="holo reveal" aria-label="Famílias de ações e onde vivem na interface">
+              <div class="holo__bar" aria-hidden="true"><span>Cupola · Famílias de ações</span><span class="holo__live">Ligado</span></div>
+              <div class="hfam__filters" role="group" aria-label="Filtrar por posição na interface">
+                <button type="button" data-filter="all" aria-pressed="true">Todas</button>
+                <button type="button" data-filter="bottom" aria-pressed="false">Em baixo</button>
+                <button type="button" data-filter="top" aria-pressed="false">Em cima</button>
+                <button type="button" data-filter="work" aria-pressed="false">Área de trabalho</button>
+                <button type="button" data-filter="left" aria-pressed="false">À esquerda</button>
+              </div>
+              <ul class="hfam">
+                <li class="hglass" data-pos="bottom" style="--i:0"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">G</span><span class="hchip">Em baixo</span></div><span class="hfam__name">Geração por agente</span><p><b>automático</b> — Gerar leads, gerar proposta, gerar curso, extrair dados, qualificar, encontrar contactos, classificar</p></li>
+                <li class="hglass" data-pos="bottom" style="--i:1"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">C</span><span class="hchip">Em baixo</span></div><span class="hfam__name">Criação manual</span><p><b>novo registo</b> — Registar lead, criar orçamento, configurar curso, adicionar linha, registar intervenção</p></li>
+                <li class="hglass" data-pos="bottom" style="--i:2"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">R</span><span class="hchip">Em baixo</span></div><span class="hfam__name">Rever / Editar</span><p><b>alterar o existente</b> — Rever custos, editar curso, editar linhas da BOM, rever dados extraídos, editar lead</p></li>
+                <li class="hglass" data-pos="bottom" style="--i:3"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">V</span><span class="hchip">Em baixo</span></div><span class="hfam__name">Validação / Decisão</span><p><b>confirmar / aprovar</b> — Confirmar BOM, aprovar custos, decidir candidatura, resolver alertas, validar documentos</p></li>
+                <li class="hglass" data-pos="bottom" style="--i:4"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">S</span><span class="hchip">Em baixo</span></div><span class="hfam__name">Enviar / Publicar</span><p><b>sistema externo</b> — Enviar RFQ, publicar no Moodle, enviar proposta / ERP</p></li>
+                <li class="hglass" data-pos="bottom" style="--i:5"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">Q</span><span class="hchip">Em baixo</span></div><span class="hfam__name">Conversa</span><p><b>chat</b> — Falar com o tutor, perguntar sobre documentos (RAG)</p></li>
+                <li class="hglass" data-pos="bottom" style="--i:6"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">L</span><span class="hchip">Em baixo</span></div><span class="hfam__name">Ciclo de vida</span><p><b>mudar de estado</b> — Rascunho → Concluído, reabrir, cancelar, atualizar estado, versão</p></li>
+                <li class="hglass" data-pos="bottom top" style="--i:7"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">M</span><span class="hchip">Em baixo / Em cima</span></div><span class="hfam__name">Gestão de dados</span><p><b>organizar a base</b> — Resolver duplicados, curar base de custos, atribuir mentor, reatribuir comercial</p></li>
+                <li class="hglass" data-pos="top" style="--i:8"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">F</span><span class="hchip">Em cima</span></div><span class="hfam__name">Filtrar / Pesquisar</span><p><b>ordenar</b> — Pesquisar registos, filtrar pipeline, filtrar por escola / curso, ordenar / priorizar</p></li>
+                <li class="hglass" data-pos="bottom top" style="--i:9"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">X</span><span class="hchip">Em baixo / Em cima</span></div><span class="hfam__name">Exportar</span><p><b>extrair dados</b> — Exportar leads, exportar BOM / DXF, exportar dados, exportar proposta</p></li>
+                <li class="hglass" data-pos="top" style="--i:10"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">I</span><span class="hchip">Em cima</span></div><span class="hfam__name">Importar</span><p><b>dar entrada de dados</b> — Importar leads (CSV / XLS), carregar documentos</p></li>
+                <li class="hglass" data-pos="work" style="--i:11"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">B</span><span class="hchip">Área de trabalho</span></div><span class="hfam__name">Ver / Navegar</span><p><b>consultar</b> — Ver dashboard, ver detalhes, analytics, ver histórico, ver fila</p></li>
+                <li class="hglass" data-pos="left" style="--i:12"><div class="hfam__top"><span class="hfam__letter" aria-hidden="true">⌂</span><span class="hchip">À esquerda</span></div><span class="hfam__name">Cupola</span><p><b>suite</b> — Navegação por operações / intenções, dashboard, créditos, definições</p></li>
+              </ul>
             </figure>
 
             <h3>Os casos que não encaixavam ensinaram mais</h3>
@@ -205,27 +248,53 @@
           </section>
 
           <!-- 03 -->
-          <section class="cs-section" id="conceito" aria-labelledby="conceito-t">
+          <section class="cs-section cs-section--wide" id="conceito" aria-labelledby="conceito-t">
             <span class="cs-section__num">03</span>
             <h2 id="conceito-t">O conceito Cupola</h2>
             <p><strong>Não é mais uma ferramenta. É o lugar onde as ferramentas deixam de estar separadas.</strong> Uma shell, muitos módulos: a shell trata de quem és, onde estás e o que podes fazer; o módulo trata do trabalho.</p>
-            <figure class="figure reveal">
-              <img src="../assets/img/cupola/06-conceito-shell.webp" width="1920" height="1080" loading="lazy" decoding="async"
-                   alt="Diagrama «Structure» da shell Cupola com cinco áreas numeradas: barra lateral à esquerda, separadores, área superior, área principal de trabalho e toolbar de ações em baixo.">
+            <figure class="holo reveal" aria-label="Estrutura da shell Cupola">
+              <div class="holo__bar" aria-hidden="true"><span>Cupola · Estrutura da shell</span><span class="holo__live">Ligado</span></div>
+              <div class="hshell-wrap">
+                <div class="hshell" aria-hidden="true">
+                  <div class="hs hs--side"><span class="hs__n">1</span><i></i><i></i><i></i><i></i></div>
+                  <div class="hs hs--tabs"><span class="hs__n">2</span><i></i><i></i><i></i></div>
+                  <div class="hs hs--top"><span class="hs__n">3</span><i></i><b>/</b><i></i><b>/</b><i></i></div>
+                  <div class="hs hs--work"><span class="hs__n">4</span><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="hs hs--tool"><span class="hs__n">5</span><i></i><i></i><i></i><i></i></div>
+                </div>
+                <ol class="hshell-legend">
+                  <li><button type="button" data-area="1" aria-pressed="false"><span>01</span><span><b>Navegação vertical</b>módulos e intenções abertas</span></button></li>
+                  <li><button type="button" data-area="2" aria-pressed="false"><span>02</span><span><b>Separadores de intenção</b>uma tarefa, um separador</span></button></li>
+                  <li><button type="button" data-area="3" aria-pressed="false"><span>03</span><span><b>Área superior</b>só breadcrumbs, nunca controlos</span></button></li>
+                  <li><button type="button" data-area="4" aria-pressed="false"><span>04</span><span><b>Conteúdo</b>o trabalho do módulo, na grelha UW</span></button></li>
+                  <li><button type="button" data-area="5" aria-pressed="false"><span>05</span><span><b>Toolbar</b>as ações, por família</span></button></li>
+                </ol>
+              </div>
             </figure>
-            <ol>
-              <li><strong>Navegação vertical</strong> — módulos e intenções abertas</li>
-              <li><strong>Separadores de intenção</strong> — uma tarefa, um separador</li>
-              <li><strong>Área superior</strong> — só breadcrumbs, nunca controlos</li>
-              <li><strong>Conteúdo</strong> — o trabalho do módulo, na grelha UW</li>
-              <li><strong>Toolbar</strong> — as ações, por família</li>
-            </ol>
 
             <h3>A ação principal muda com o contexto</h3>
             <p>A Toolbar só mostra as famílias que se aplicam. A ação primária acompanha o que o utilizador precisa a seguir; o vocabulário mantém-se.</p>
-            <figure class="figure reveal">
-              <img src="../assets/img/cupola/07-toolbar-contexto.webp" width="1920" height="936" loading="lazy" decoding="async"
-                   alt="Toolbar do Cupola com um item selecionado, a ação primária «Qualify» destacada e ações secundárias como Edit, exportar e pesquisar.">
+            <figure class="holo reveal" aria-label="Toolbar contextual: experimenta selecionar registos">
+              <div class="holo__bar" aria-hidden="true"><span>Cupola · Toolbar</span><span class="holo__live">Interativo</span></div>
+              <p class="holo__title">Uma toolbar só para o que é direto. <span>Seleciona registos e vê-a adaptar-se.</span></p>
+              <div class="htool-stage" data-toolbar>
+                <div class="htable">
+                  <label class="hrow"><input type="checkbox" checked aria-label="Selecionar Registo 01"><span><span class="hrow__name">Registo 01</span><span class="hrow__line"></span></span><span class="hrow__tag">lead</span></label>
+                  <label class="hrow"><input type="checkbox" checked aria-label="Selecionar Registo 02"><span><span class="hrow__name">Registo 02</span><span class="hrow__line"></span></span><span class="hrow__tag">lead</span></label>
+                  <label class="hrow"><input type="checkbox" aria-label="Selecionar Registo 03"><span><span class="hrow__name">Registo 03</span><span class="hrow__line"></span></span><span class="hrow__tag">lead</span></label>
+                  <label class="hrow"><input type="checkbox" aria-label="Selecionar Registo 04"><span><span class="hrow__name">Registo 04</span><span class="hrow__line"></span></span><span class="hrow__tag">lead</span></label>
+                </div>
+                <div class="htoolbar" role="toolbar" aria-label="Ações">
+                  <button type="button" class="htb htb--agent"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1.5l1.4 4.1 4.1 1.4-4.1 1.4L8 12.5 6.6 8.4 2.5 7l4.1-1.4z"/><path d="M13 11l.6 1.6 1.4.4-1.4.5L13 15l-.6-1.5L11 13l1.4-.4z" opacity=".7"/></svg>Agente</button>
+                  <span class="htb__sep" aria-hidden="true"></span>
+                  <span class="htb__count" aria-live="polite">2 selecionados</span>
+                  <button type="button" class="htb htb--primary" data-needs="1">Qualificar <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4.5 6.5 3.5 3.5 3.5-3.5"/></svg></button>
+                  <button type="button" class="htb" data-needs="1"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 3.2 12.8 5.5 6 12.3H3.7V10z"/></svg>Editar</button>
+                  <button type="button" class="htb htb--icon" aria-label="Exportar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 10V2.8M5.2 5.6 8 2.8l2.8 2.8M3 9.5V13h10V9.5"/></svg></button>
+                  <button type="button" class="htb htb--icon" aria-label="Pesquisar"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="7" r="4"/><path d="m10 10 3.2 3.2"/></svg></button>
+                </div>
+                <div class="htool-notes" aria-hidden="true"><span class="hchip" style="color:var(--h-acc)">Ação primária</span><span class="hchip">Ações secundárias</span><span class="hchip">Agente à parte, sempre à esquerda</span></div>
+              </div>
             </figure>
 
             <h3>O agente, à parte</h3>
@@ -302,15 +371,37 @@
           </section>
 
           <!-- 05 -->
-          <section class="cs-section" id="camadas" aria-labelledby="camadas-t">
+          <section class="cs-section cs-section--wide" id="camadas" aria-labelledby="camadas-t">
             <span class="cs-section__num">05</span>
             <h2 id="camadas-t">Core, Vertical Packs e Connectors</h2>
             <p>Com os Product Owners, separámos o que é igual para todos, o que se adapta a um setor e o que liga aos sistemas do cliente.</p>
 
             <h3>Uma coisa. Quatro camadas.</h3>
-            <figure class="figure reveal">
-              <img src="../assets/img/cupola/10-quatro-camadas.webp" width="1920" height="959" loading="lazy" decoding="async"
-                   alt="Diagrama «One engine. Interchangeable jackets around it. Cables out to your systems.»: um módulo com Core ao centro (ingest, classify, extract, score, review, export), Dedicated Pack por setor e Connectors para os sistemas do cliente.">
+            <figure class="holo reveal" aria-label="Um módulo: Core, Pack dedicado e Connectors">
+              <div class="holo__bar" aria-hidden="true"><span>Cupola · Módulo</span><span class="holo__live">Ligado</span></div>
+              <p class="holo__title">Um motor. <span>Capas intermutáveis à volta.</span> Cabos para os teus sistemas.</p>
+              <div class="hlayers">
+                <div class="hlayer">
+                  <div class="hlayer__lbl hglass"><b>Pack dedicado</b><p>O que é específico do teu setor: as tuas normas, os teus tipos de documento, as tuas certificações.</p></div>
+                  <div class="hlayer__body">
+                    <div class="hpack hglass"><h5>Engenharia e Construção</h5><ul><li>tabulação de propostas face às especificações</li><li>catálogo de normas e auditoria</li></ul></div>
+                    <div class="hpack hglass"><h5>Ensino Superior</h5><ul><li>validação de credenciais internacionais</li><li>completude e sinais de fraude</li></ul></div>
+                  </div>
+                </div>
+                <div class="hlayer">
+                  <div class="hlayer__lbl hglass"><b>Core</b><p>O mesmo core em todo o lado. Chega testado, e cada melhoria também te chega a ti.</p></div>
+                  <div class="hlayer__body">
+                    <div class="hcore hglass"><h5>Core</h5><ol class="hpipe"><li><span class="hchip">ingerir</span></li><li><span class="hchip">classificar</span></li><li><span class="hchip">extrair</span></li><li><span class="hchip">pontuar</span></li><li><span class="hchip">rever</span></li><li><span class="hchip">exportar</span></li></ol></div>
+                  </div>
+                </div>
+                <div class="hlayer">
+                  <div class="hlayer__lbl hglass"><b>Connectors</b><p>Ligam-se aos sistemas que já usas.</p></div>
+                  <div class="hlayer__body">
+                    <div class="hpack hpack--conn hglass"><ul><li>ERP de projeto</li><li>Cloud</li></ul></div>
+                    <div class="hpack hpack--conn hglass"><ul><li>Portal de candidaturas</li><li>Sistema académico</li></ul></div>
+                  </div>
+                </div>
+              </div>
             </figure>
             <p>O <strong>Cupola</strong> é a plataforma — é isto que o cliente compra. O <strong>Pilar</strong> é a área de trabalho (uma prateleira interna, nunca vendida). O <strong>Módulo</strong> é a capacidade. A <strong>Solução</strong> é o conjunto montado para um setor ou um desafio: descrito, nunca com marca própria.</p>
 
@@ -328,7 +419,7 @@
           </section>
 
           <!-- 06 -->
-          <section class="cs-section" id="design-system" aria-labelledby="ds-t">
+          <section class="cs-section cs-section--wide" id="design-system" aria-labelledby="ds-t">
             <span class="cs-section__num">06</span>
             <h2 id="ds-t">Design system da UMAIN WORKS</h2>
             <p>As fundações e os componentes próprios da marca, em Figma e em código, para que todos os módulos falem a mesma linguagem visual.</p>
@@ -346,9 +437,19 @@
             </ul>
 
             <h3>Como está organizado</h3>
-            <figure class="figure reveal">
-              <img src="../assets/img/cupola/13-ds-organizacao.webp" width="1920" height="970" loading="lazy" decoding="async"
-                   alt="Slide «How it is organised»: átomos, moléculas e organismos.">
+            <figure class="holo reveal" aria-label="Organização do design system: átomos, moléculas e organismos">
+              <div class="holo__bar" aria-hidden="true"><span>Cupola · Design system</span><span class="holo__live">Ligado</span></div>
+              <div class="hatoms">
+                <div class="hatom hglass"><span class="hatom__lbl">Átomos</span><div class="hatom__demo" aria-hidden="true"><span class="hbtn">Botão</span><span class="hchip">Tag</span><span class="hinput">Campo</span></div></div>
+                <span class="hatoms__arrow" aria-hidden="true">→</span>
+                <div class="hatom hglass"><span class="hatom__lbl">Moléculas</span><div class="hatom__demo" aria-hidden="true"><span class="hsearch"><span class="hinput">Pesquisar…</span><span class="hbtn">Ir</span></span></div></div>
+                <span class="hatoms__arrow" aria-hidden="true">→</span>
+                <div class="hatom hglass"><span class="hatom__lbl">Organismos</span><div class="hatom__demo horg" aria-hidden="true">
+                  <div class="horg__row"><span class="horg__dot"></span><i></i><i></i></div>
+                  <div class="horg__row"><span class="horg__dot" style="background:rgba(255,255,255,.2)"></span><i></i><i></i></div>
+                  <div class="htoolbar"><span class="htb htb--agent"><svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 1.5l1.4 4.1 4.1 1.4-4.1 1.4L8 12.5 6.6 8.4 2.5 7l4.1-1.4z"/><path d="M13 11l.6 1.6 1.4.4-1.4.5L13 15l-.6-1.5L11 13l1.4-.4z" opacity=".7"/></svg></span><span class="htb htb--primary">Ação</span><span class="htb htb--icon"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><circle cx="7" cy="7" r="4"/><path d="m10 10 3.2 3.2"/></svg></span></div>
+                </div></div>
+              </div>
             </figure>
             <ul>
               <li><strong>Átomos</strong> — os blocos mais pequenos, como um botão, uma tag ou um campo de texto.</li>
@@ -357,9 +458,13 @@
             </ul>
 
             <h3>Uma fonte de verdade para cada equipa</h3>
-            <figure class="figure reveal">
-              <img src="../assets/img/cupola/14-ds-fontes-verdade.webp" width="1920" height="940" loading="lazy" decoding="async"
-                   alt="Slide «A single source of truth for every team»: Figma para designers e Storybook para developers.">
+            <figure class="holo reveal" aria-label="Uma fonte de verdade para cada equipa">
+              <div class="holo__bar" aria-hidden="true"><span>Cupola · Fontes de verdade</span><span class="holo__live">Ligado</span></div>
+              <div class="hsrc">
+                <div class="hglass"><span class="hsrc__ico" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M10 2.5 16 8l-6 9.5L4 8z"/><circle cx="10" cy="9" r="1.6"/></svg></span><b>Figma</b><span class="hchip">para designers</span></div>
+                <div class="hglass"><span class="hsrc__ico" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m7 6-4 4 4 4M13 6l4 4-4 4"/></svg></span><b>Storybook</b><span class="hchip">para developers</span><p>«Como uso isto?»</p></div>
+                <div class="hglass"><span class="hsrc__ico" aria-hidden="true"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M4 3.5h9a2 2 0 0 1 2 2V17H6a2 2 0 0 1-2-2z"/><path d="M4 15a2 2 0 0 1 2-2h9"/></svg></span><b>Confluence</b><span class="hchip">para o contexto</span><p>«Porque é assim?»</p></div>
+              </div>
             </figure>
             <ul>
               <li><strong>Figma</strong> para designers</li>
@@ -369,7 +474,7 @@
           </section>
 
           <!-- 07 -->
-          <section class="cs-section" id="na-pratica" aria-labelledby="pratica-t">
+          <section class="cs-section cs-section--wide" id="na-pratica" aria-labelledby="pratica-t">
             <span class="cs-section__num">07</span>
             <h2 id="pratica-t">Na prática</h2>
             <p>O sistema em uso: ecrãs de protótipo construídos com os componentes e as regras do Cupola.</p>
@@ -385,9 +490,20 @@
             <blockquote class="quote reveal">
               <p>«Tenho duzentas pessoas a operar equipamentos e toda a formação está em manuais que ninguém lê. E tenho uma auditoria em setembro. Têm alguma coisa para isto?»</p>
             </blockquote>
-            <figure class="figure reveal">
-              <img src="../assets/img/cupola/15-do-problema-ao-produto.webp" width="1920" height="989" loading="lazy" decoding="async"
-                   alt="Slide «Connecting tools moves the data. It does not move the rules.»: uma lista de materiais validada passa por verificações de preço, política comercial e âmbito até chegar a uma proposta.">
+            <figure class="holo reveal" aria-label="Da lista de materiais validada à proposta, passando pelas regras">
+              <div class="holo__bar" aria-hidden="true"><span>Cupola · Regras</span><span class="holo__live">Ligado</span></div>
+              <p class="holo__title">Ligar ferramentas move os dados. <span>Não move as regras.</span></p>
+              <div class="hrules">
+                <div class="hrules__end"><svg viewBox="0 0 96 96" fill="none" aria-hidden="true"><rect x="10" y="18" width="76" height="60" rx="8" fill="#141518" stroke="rgba(255,255,255,.35)"/><path d="M10 38h76M10 58h76M36 18v60" stroke="rgba(255,255,255,.3)"/><rect x="10" y="18" width="76" height="60" rx="8" stroke="url(#hg1)" stroke-width="1.5"/><defs><linearGradient id="hg1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#F0874A"/><stop offset="1" stop-color="#F0874A" stop-opacity="0"/></linearGradient></defs></svg><span>Lista de materiais validada</span></div>
+                <div class="hrules__panel hglass">
+                  <div class="hcheck"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="3" width="14" height="14" rx="2.5"/><path d="M5.5 10.5 9 14l8.5-10"/></svg><div><b>Integridade de preços</b><ul><li>cada linha da BOM corresponde a um artigo com preço — nenhuma linha sem preço ou «a confirmar» sai de casa</li><li>aplica-se a versão da tabela de preços em vigor, não a que estava em cache</li><li>preços contratados do cliente ou acordos-quadro sobrepõem-se à tabela</li><li>moeda e regra cambial do destino</li></ul></div></div>
+                  <div class="hcheck"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="3" width="14" height="14" rx="2.5"/><path d="M5.5 10.5 9 14l8.5-10"/></svg><div><b>Política comercial</b><ul><li>margem mínima — abaixo dela, a proposta não sai</li><li>teto de desconto antes de escalar</li><li>condições de pagamento, validade e garantia por família de produto</li><li>limite de valor + quem tem de aprovar</li></ul></div></div>
+                  <div class="hcheck"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="3" width="14" height="14" rx="2.5"/><path d="M5.5 10.5 9 14l8.5-10"/></svg><div><b>Integridade do âmbito</b><ul><li>artigos reutilizados ou fornecidos pelo cliente ficam no âmbito, mas fora do custo</li><li>dependências presentes — se precisa de um controlador, a proposta não sai sem ele</li><li>peças obsoletas substituídas ou assinaladas</li></ul></div></div>
+                  <div class="hcheck"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="3" width="14" height="14" rx="2.5"/><path d="M5.5 10.5 9 14l8.5-10"/></svg><div><b>Fornecimento e conformidade</b><ul><li>só fornecedores aprovados</li><li>prazos de entrega atuais, com alerta quando um excede a entrega prometida</li><li>normas e certificações aplicáveis ao setor</li><li>controlo de exportação para o destino</li></ul></div></div>
+                </div>
+                <div class="hrules__end"><svg viewBox="0 0 96 96" fill="none" aria-hidden="true"><path d="M24 10h34l18 18v58H24z" fill="#141518" stroke="rgba(255,255,255,.35)"/><path d="M58 10v18h18" stroke="rgba(255,255,255,.35)"/><path d="M36 50h26M36 60h18" stroke="#F0874A" stroke-width="2" stroke-linecap="round"/></svg><span>Proposta</span></div>
+              </div>
+              <figcaption class="holo__note">É aqui que a inteligência deixa de ficar isolada: cada capacidade que juntas valoriza as que já tens.</figcaption>
             </figure>
             <p><strong>Formação corporativa — do manual à certificação.</strong> Módulos do pilar Lumina (AI LMS, ITS, LevelUP, RiskRadar) + um vertical pack de indústria (certificações com data de validade, matriz de competências por posto de trabalho, relatório de auditoria) + connectors (sistema de RH, controlo de acessos da fábrica). Foi vendido um só produto: o Cupola.</p>
           </section>

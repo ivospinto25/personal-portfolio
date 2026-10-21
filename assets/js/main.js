@@ -132,6 +132,85 @@
     select(tabs.filter(function (t) { return t.getAttribute("aria-selected") === "true"; })[0] || tabs[0], false);
   });
 
+  /* ---------- Holo: interfaces interativas do case study Cupola ---------- */
+  function whenVisible(el, fn) {
+    if (!("IntersectionObserver" in window) || reduceMotion.matches) { fn(); return; }
+    var o = new IntersectionObserver(function (es) {
+      if (es[0].isIntersecting) { o.disconnect(); fn(); }
+    }, { threshold: 0.35 });
+    o.observe(el);
+  }
+
+  // Contador (ex.: 195 ações)
+  document.querySelectorAll(".holo [data-count]").forEach(function (el) {
+    var end = Number(el.getAttribute("data-count"));
+    if (reduceMotion.matches) return;
+    el.textContent = "0";
+    whenVisible(el, function () {
+      var t0 = null, dur = 1400;
+      function step(ts) {
+        if (!t0) t0 = ts;
+        var k = Math.min((ts - t0) / dur, 1), e = 1 - Math.pow(1 - k, 3);
+        el.textContent = Math.round(end * e);
+        if (k < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  });
+
+  // Filtro das famílias de ações
+  document.querySelectorAll(".hfam__filters").forEach(function (group) {
+    var cards = group.parentNode.querySelectorAll(".hfam > li");
+    group.addEventListener("click", function (e) {
+      var b = e.target.closest("button"); if (!b) return;
+      var f = b.getAttribute("data-filter");
+      group.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
+      cards.forEach(function (c) {
+        var on = f === "all" || (" " + c.getAttribute("data-pos") + " ").indexOf(" " + f + " ") > -1;
+        c.classList.toggle("is-dim", !on);
+      });
+    });
+  });
+
+  // Estrutura da shell: lista ↔ áreas, com ciclo automático até haver interação
+  document.querySelectorAll(".hshell-wrap").forEach(function (wrap) {
+    var shell = wrap.querySelector(".hshell"), btns = wrap.querySelectorAll("[data-area]");
+    var timer = null, cur = 0, touched = false;
+    function show(n) {
+      cur = n;
+      if (n) shell.setAttribute("data-active", n); else shell.removeAttribute("data-active");
+      btns.forEach(function (b) { b.setAttribute("aria-pressed", String(b.getAttribute("data-area")) === String(n) ? "true" : "false"); });
+    }
+    function stop() { touched = true; clearInterval(timer); }
+    btns.forEach(function (b) {
+      var n = Number(b.getAttribute("data-area"));
+      b.addEventListener("mouseenter", function () { stop(); show(n); });
+      b.addEventListener("focus", function () { stop(); show(n); });
+      b.addEventListener("click", function () { stop(); show(cur === n ? 0 : n); });
+    });
+    wrap.addEventListener("mouseleave", function () { if (touched) show(0); });
+    if (!reduceMotion.matches) {
+      whenVisible(wrap, function () {
+        if (touched) return;
+        show(1);
+        timer = setInterval(function () { if (!touched) show(cur % 5 + 1); }, 2200);
+      });
+    }
+  });
+
+  // Toolbar contextual: só mostra as ações que se aplicam à seleção
+  document.querySelectorAll("[data-toolbar]").forEach(function (stage) {
+    var boxes = stage.querySelectorAll(".hrow input"), count = stage.querySelector(".htb__count");
+    var needs = stage.querySelectorAll("[data-needs]");
+    function update() {
+      var n = 0; boxes.forEach(function (b) { if (b.checked) n++; });
+      count.textContent = n === 0 ? "Nada selecionado" : n === 1 ? "1 selecionado" : n + " selecionados";
+      needs.forEach(function (el) { el.hidden = n < Number(el.getAttribute("data-needs")); });
+    }
+    boxes.forEach(function (b) { b.addEventListener("change", update); });
+    update();
+  });
+
   /* ---------- Formulário de contacto (abre o cliente de email) ---------- */
   var form = document.querySelector(".form[data-email]");
   if (form) {
