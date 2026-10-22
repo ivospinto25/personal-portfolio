@@ -782,31 +782,6 @@ button { font: inherit; color: inherit; }
 .hshell-legend button span:first-child { font: 500 12px var(--font-mono); color: var(--h-acc); padding-top: 3px; }
 .hshell-legend button:hover, .hshell-legend button[aria-pressed="true"] { border-color: rgba(240,135,74,.4); background: var(--h-acc-soft); color: #d6d6d2; }
 
-/* 6 · Camadas do módulo */
-.hlayers { display: grid; gap: 10px; }
-.hlayer { display: grid; gap: 10px; align-items: stretch; }
-@media (min-width: 760px) { .hlayer { grid-template-columns: 200px minmax(0, 1fr); gap: 16px; } }
-.hlayer__lbl { padding: 14px 16px; display: grid; align-content: center; gap: 4px; }
-.hlayer__lbl b { color: var(--h-text); font-size: 15px; font-weight: 600; }
-.cs-section .holo .hlayer__lbl p { font-size: 13px; line-height: 1.45; }
-.hlayer__body { display: grid; gap: 10px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); }
-.hpack { padding: 14px 16px; }
-.hpack h5 { font-size: 14px; font-weight: 600; color: var(--h-acc); margin-bottom: 8px; }
-.hpack ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
-.cs-section .holo .hpack li { font-size: 13px; line-height: 1.45; color: #cfcfca; padding-left: 14px; position: relative; }
-.cs-section .holo .hpack li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 1px; background: var(--h-acc); }
-.hpack--conn { border-style: dashed; }
-.hcore { grid-column: 1 / -1; position: relative; padding: 18px 16px; border-color: rgba(240,135,74,.4); background: linear-gradient(180deg, rgba(240,135,74,.12), rgba(240,135,74,.04)); overflow: hidden; }
-.hcore h5 { font-size: 14px; font-weight: 600; color: var(--h-acc); margin-bottom: 14px; }
-.hpipe { list-style: none; margin: 0; padding: 0; position: relative; display: flex; flex-wrap: wrap; gap: 8px 6px; align-items: center; }
-.hpipe li { display: inline-flex; align-items: center; gap: 6px; }
-.cs-section .holo .hpipe li { font-size: 14px; }
-.hpipe li:not(:last-child)::after { content: "→"; color: var(--h-dim); margin-left: 4px; }
-.hpipe .hchip { color: var(--h-text); height: 30px; font-size: 12px; }
-.hcore::after { content: ""; position: absolute; top: 0; bottom: 0; width: 30%; left: -30%; pointer-events: none;
-  background: linear-gradient(90deg, transparent, rgba(255,190,150,.16), transparent); animation: holo-pulse 3.4s ease-in-out infinite; }
-@keyframes holo-pulse { 0% { left: -30%; } 60%, 100% { left: 110%; } }
-
 /* 7 · Regras: da BOM à proposta */
 .hrules { display: grid; gap: var(--s4); align-items: center; position: relative; }
 @media (min-width: 900px) { .hrules { grid-template-columns: 170px minmax(0, 1fr) 170px; gap: var(--s6); } }
@@ -948,7 +923,7 @@ button { font: inherit; color: inherit; }
 
 .cs-section--wide > .holo { max-width: none; }
 @media (prefers-reduced-motion: reduce) {
-  .holo::after, .hcore::after, .hrules__panel::before, .hs--work i, .holo__live::before { animation: none !important; }
+  .holo::after, .hrules__panel::before, .hs--work i, .holo__live::before { animation: none !important; }
 }
 
 .next-project { border-top: 1px solid var(--line); padding-block: clamp(56px, 8vw, 96px); }
