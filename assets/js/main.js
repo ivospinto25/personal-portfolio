@@ -190,8 +190,15 @@
     var dots = mock.querySelector(".mock__dots"), prev = mock.querySelector(".mock__prev"), next = mock.querySelector(".mock__next");
     for (var i = 0; i < slides.length; i++) dots.appendChild(document.createElement("i"));
     function idx() { return Math.round(track.scrollLeft / track.clientWidth); }
+    var cap = mock.querySelector(".mock__caption");
     function sync() {
       var k = idx();
+      Array.prototype.forEach.call(slides, function (sl, j) {
+        var v = sl.querySelector("video"); if (!v) return;
+        if (j === k && !reduceMotion.matches) { v.preload = "auto"; var pr = v.play(); if (pr && pr.catch) pr.catch(function () {}); }
+        else v.pause();
+      });
+      if (cap && slides[k]) cap.innerHTML = "<b>" + String(k + 1).padStart(2, "0") + " / " + String(slides.length).padStart(2, "0") + "</b>" + (slides[k].getAttribute("data-title") || "");
       Array.prototype.forEach.call(dots.children, function (d, j) { d.classList.toggle("is-on", j === k); });
       prev.disabled = k <= 0; next.disabled = k >= slides.length - 1;
     }
