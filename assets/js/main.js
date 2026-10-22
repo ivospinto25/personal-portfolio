@@ -214,6 +214,34 @@
     sync();
   });
 
+  /* ---------- Comparador antes/depois ---------- */
+  document.querySelectorAll(".compare__stage").forEach(function (stage) {
+    var range = stage.querySelector(".compare__range");
+    var dragging = false;
+    function set(pct) {
+      pct = Math.max(0, Math.min(100, pct));
+      stage.style.setProperty("--pos", pct + "%");
+      range.value = Math.round(pct);
+      range.setAttribute("aria-valuetext", Math.round(pct) + "% antes, " + (100 - Math.round(pct)) + "% depois");
+    }
+    function fromPointer(e) {
+      var r = stage.getBoundingClientRect();
+      set(((e.clientX - r.left) / r.width) * 100);
+    }
+    stage.addEventListener("pointerdown", function (e) {
+      if (e.button !== undefined && e.button !== 0) return;
+      dragging = true;
+      stage.setPointerCapture(e.pointerId);
+      fromPointer(e);
+    });
+    stage.addEventListener("pointermove", function (e) { if (dragging) fromPointer(e); });
+    ["pointerup", "pointercancel", "lostpointercapture"].forEach(function (ev) {
+      stage.addEventListener(ev, function () { dragging = false; });
+    });
+    range.addEventListener("input", function () { set(Number(range.value)); });
+    set(Number(range.value));
+  });
+
   /* ---------- Formulário de contacto (abre o cliente de email) ---------- */
   var form = document.querySelector(".form[data-email]");
   if (form) {
