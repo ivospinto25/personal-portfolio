@@ -613,7 +613,7 @@ button { font: inherit; color: inherit; }
 .cs-section .sitemap__note { font-size: 13px; color: var(--muted); }
 
 .cs-section--wide { max-width: none; }
-.cs-section--wide > :not(.sitemap-tabs):not(.flowmap):not(.holo) { max-width: 760px; }
+.cs-section--wide > :not(.sitemap-tabs):not(.flowmap):not(.holo):not(.comp):not(.personas) { max-width: 760px; }
 
 /* Diagrama de fluxo (nós em pílula, ícones e ligações) */
 .flowmap {
@@ -898,6 +898,56 @@ button { font: inherit; color: inherit; }
 @media (prefers-reduced-motion: reduce) {
   .holo::after, .hs--work i { animation: none !important; }
 }
+
+/* Análise competitiva (VOICIS) */
+.comp { display: grid; gap: var(--s4); max-width: none; }
+.comp__legend { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s5); font-size: 13px; color: var(--text2); }
+.comp__legend span { display: inline-flex; align-items: center; gap: 8px; }
+.comp__legend i { width: 14px; height: 10px; border-radius: 3px; display: inline-block; }
+.lg-c, .comp__layout .c { background: var(--accent); fill: var(--accent); }
+.lg-t, .comp__layout .t { background: color-mix(in srgb, var(--fg) 45%, transparent); fill: color-mix(in srgb, var(--fg) 45%, transparent); }
+.lg-m, .comp__layout .m { background: var(--surface2); fill: var(--surface2); }
+.lg-m { border: 1px solid var(--line); }
+.lg-x, .comp__layout .x { background: color-mix(in srgb, var(--accent) 30%, transparent); fill: color-mix(in srgb, var(--accent) 30%, transparent); }
+.comp__layout .o { fill: var(--bg); stroke: var(--line); }
+.comp__layout .x { stroke: var(--accent); stroke-dasharray: 3 2; stroke-width: .8; }
+.comp__grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); }
+.comp__card { display: grid; grid-template-rows: auto auto auto auto 1fr; gap: var(--s4); padding: 20px; border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--surface); }
+.comp__head { display: flex; align-items: center; gap: 12px; }
+.comp__head h4 { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; }
+.comp__logo { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; font-weight: 700; font-size: 16px; color: #fff; }
+.comp__logo--slack { background: #4A154B; } .comp__logo--teams { background: #5059C9; } .comp__logo--skype { background: #0078D4; }
+.cs-section .comp__desc { font-size: 15px; line-height: 1.5; color: var(--text2); min-height: 4.5em; }
+.comp__block { display: grid; gap: 8px; align-content: start; padding-top: var(--s4); border-top: 1px solid var(--line); }
+.comp__block b { font-size: 15px; font-weight: 600; }
+.comp__layout svg { width: 100%; max-width: 220px; height: auto; display: block; }
+.cs-section .comp__block ul { display: grid; gap: 4px; list-style: none; margin: 0; padding: 0; }
+.cs-section .comp__block li { position: relative; padding-left: 14px; font-size: 14px; line-height: 1.45; color: var(--text2); }
+.cs-section .comp__block li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 1px; background: var(--muted); }
+.comp__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.comp__chips .tag { height: auto; min-height: 28px; padding: 4px 10px; font-size: 13px; }
+.comp__call b { display: inline-flex; align-items: center; gap: 8px; }
+.comp__call i { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+.comp__call--bad i { background: #d64545; } .comp__call--mid i { background: #e0a23a; } .comp__call--good i { background: var(--ok); }
+.cs-section .comp__call p { font-size: 14px; line-height: 1.5; color: var(--text2); }
+
+/* Personas (VOICIS) */
+.personas { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr)); max-width: none; align-items: stretch; }
+.persona { display: flex; flex-direction: column; gap: var(--s4); padding: 20px; border-radius: var(--r-lg); border: 1px solid var(--line); background: var(--surface); }
+.persona__head { display: flex; align-items: center; gap: 14px; }
+.persona__head img { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; flex: none; border: 2px solid var(--surface); box-shadow: 0 0 0 1px var(--line); }
+.persona__head h4 { font-size: 20px; font-weight: 600; letter-spacing: -0.02em; }
+.cs-section .persona__head p { font-size: 14px; line-height: 1.4; color: var(--text2); }
+.persona__chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.persona__chips .tag { height: auto; min-height: 26px; padding: 3px 10px; font-size: 12.5px; }
+.persona__block { display: grid; gap: 8px; padding-top: var(--s4); border-top: 1px solid var(--line); }
+.cs-section .persona__block ul { display: grid; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.cs-section .persona__block li { position: relative; padding-left: 16px; font-size: 14px; line-height: 1.45; color: var(--text2); }
+.cs-section .persona__block li::before { content: ""; position: absolute; left: 0; top: .55em; width: 6px; height: 6px; border-radius: 50%; background: var(--muted); }
+.cs-section .persona__block--pain li::before { background: #d64545; }
+.persona__block--help { margin: auto -20px -20px; padding: var(--s4) 20px 20px; border-radius: 0 0 var(--r-lg) var(--r-lg); background: color-mix(in srgb, var(--accent) 9%, var(--surface)); border-top-color: color-mix(in srgb, var(--accent) 35%, var(--line)); }
+.cs-section .persona__block--help li { color: var(--fg); }
+.cs-section .persona__block--help li::before { background: var(--accent); }
 
 .next-project { border-top: 1px solid var(--line); padding-block: clamp(56px, 8vw, 96px); }
 .next-project__link { display: grid; gap: var(--s3); }
