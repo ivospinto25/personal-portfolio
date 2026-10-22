@@ -17,7 +17,7 @@
   function applyTheme(theme) {
     root.setAttribute("data-theme", theme);
     document.querySelectorAll(".theme-toggle").forEach(function (btn) {
-      btn.setAttribute("aria-label", theme === "dark" ? "Mudar para tema claro" : "Mudar para tema escuro");
+      btn.setAttribute("aria-label", theme === "dark" ? "Switch to light theme" : "Switch to dark theme");
       btn.setAttribute("aria-pressed", theme === "dark" ? "true" : "false");
     });
   }
@@ -37,7 +37,7 @@
     var setMenu = function (open) {
       nav.classList.toggle("is-open", open);
       menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
-      menuBtn.setAttribute("aria-label", open ? "Fechar menu" : "Abrir menu");
+      menuBtn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
     };
     menuBtn.addEventListener("click", function () { setMenu(!nav.classList.contains("is-open")); });
     nav.querySelectorAll(".nav__links a").forEach(function (a) {
@@ -222,7 +222,7 @@
       pct = Math.max(0, Math.min(100, pct));
       stage.style.setProperty("--pos", pct + "%");
       range.value = Math.round(pct);
-      range.setAttribute("aria-valuetext", Math.round(pct) + "% antes, " + (100 - Math.round(pct)) + "% depois");
+      range.setAttribute("aria-valuetext", Math.round(pct) + "% before, " + (100 - Math.round(pct)) + "% after");
     }
     function fromPointer(e) {
       var r = stage.getBoundingClientRect();
@@ -251,16 +251,16 @@
       if (!form.checkValidity()) { form.reportValidity(); return; }
       var to = form.getAttribute("data-email");
       if (!to) {
-        status.textContent = "O email de contacto ainda não está configurado.";
+        status.textContent = "The contact email is not set up yet.";
         return;
       }
       var name = form.elements.nome.value.trim();
       var email = form.elements.email.value.trim();
       var msg = form.elements.mensagem.value.trim();
-      var subject = "Contacto pelo portfólio — " + name;
+      var subject = "Portfolio contact — " + name;
       var body = msg + "\n\n— " + name + " (" + email + ")";
       window.location.href = "mailto:" + to + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-      status.textContent = "A abrir o teu cliente de email…";
+      status.textContent = "Opening your email client…";
     });
   }
 
