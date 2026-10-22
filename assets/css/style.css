@@ -700,9 +700,6 @@ button { font: inherit; color: inherit; }
 
 .holo__bar { display: flex; justify-content: space-between; align-items: center; gap: var(--s4); flex-wrap: wrap;
   font-family: var(--font-mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--h-muted); }
-.holo__live { display: inline-flex; align-items: center; gap: 8px; }
-.holo__live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--h-acc); box-shadow: 0 0 0 0 rgba(240,135,74,.6); animation: holo-ping 2.4s ease-out infinite; }
-@keyframes holo-ping { 0% { box-shadow: 0 0 0 0 rgba(240,135,74,.55); } 80%, 100% { box-shadow: 0 0 0 9px rgba(240,135,74,0); } }
 .holo__title { font-size: clamp(22px, 3vw, 32px); font-weight: 500; letter-spacing: -0.025em; line-height: 1.15; color: var(--h-text); }
 .holo__title span { color: var(--h-dim); }
 .holo__note { font-size: 13px; color: var(--h-muted); border-left: 2px solid var(--h-acc); padding-left: 12px; }
@@ -897,7 +894,7 @@ button { font: inherit; color: inherit; }
 
 .cs-section--wide > .holo { max-width: none; }
 @media (prefers-reduced-motion: reduce) {
-  .holo::after, .hs--work i, .holo__live::before { animation: none !important; }
+  .holo::after, .hs--work i { animation: none !important; }
 }
 
 .next-project { border-top: 1px solid var(--line); padding-block: clamp(56px, 8vw, 96px); }
