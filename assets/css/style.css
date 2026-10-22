@@ -981,6 +981,8 @@ button { font: inherit; color: inherit; }
   opacity: 0; cursor: ew-resize; -webkit-appearance: none; appearance: none; pointer-events: none;
 }
 .compare__range:focus-visible ~ .compare__handle .compare__knob { outline: 3px solid var(--fg); outline-offset: 3px; }
+.compare .mock__device { width: 100%; }
+.compare .mock__screen .compare__stage { border: 0; border-radius: 8px; }
 .compare figcaption { font-size: 14px; color: var(--muted); }
 .compare figcaption strong { color: var(--text2); }
 @media (max-width: 640px) { .compare__knob { width: 38px; height: 38px; } .compare__tag { top: 10px; font-size: 10px; } }
