@@ -158,20 +158,6 @@
     });
   });
 
-  // Filtro das famílias de ações
-  document.querySelectorAll(".hfam__filters").forEach(function (group) {
-    var cards = group.parentNode.querySelectorAll(".hfam > li");
-    group.addEventListener("click", function (e) {
-      var b = e.target.closest("button"); if (!b) return;
-      var f = b.getAttribute("data-filter");
-      group.querySelectorAll("button").forEach(function (x) { x.setAttribute("aria-pressed", x === b ? "true" : "false"); });
-      cards.forEach(function (c) {
-        var on = f === "all" || (" " + c.getAttribute("data-pos") + " ").indexOf(" " + f + " ") > -1;
-        c.classList.toggle("is-dim", !on);
-      });
-    });
-  });
-
   // Estrutura da shell: lista ↔ áreas, com ciclo automático até haver interação
   document.querySelectorAll(".hshell-wrap").forEach(function (wrap) {
     var shell = wrap.querySelector(".hshell"), btns = wrap.querySelectorAll("[data-area]");
@@ -198,17 +184,27 @@
     }
   });
 
-  // Toolbar contextual: só mostra as ações que se aplicam à seleção
-  document.querySelectorAll("[data-toolbar]").forEach(function (stage) {
-    var boxes = stage.querySelectorAll(".hrow input"), count = stage.querySelector(".htb__count");
-    var needs = stage.querySelectorAll("[data-needs]");
-    function update() {
-      var n = 0; boxes.forEach(function (b) { if (b.checked) n++; });
-      count.textContent = n === 0 ? "Nada selecionado" : n === 1 ? "1 selecionado" : n + " selecionados";
-      needs.forEach(function (el) { el.hidden = n < Number(el.getAttribute("data-needs")); });
+  // Galeria dentro da maqueta de ecrã (scroll horizontal + setas + pontos)
+  document.querySelectorAll(".mock").forEach(function (mock) {
+    var track = mock.querySelector(".mock__track"), slides = track.children;
+    var dots = mock.querySelector(".mock__dots"), prev = mock.querySelector(".mock__prev"), next = mock.querySelector(".mock__next");
+    for (var i = 0; i < slides.length; i++) dots.appendChild(document.createElement("i"));
+    function idx() { return Math.round(track.scrollLeft / track.clientWidth); }
+    function sync() {
+      var k = idx();
+      Array.prototype.forEach.call(dots.children, function (d, j) { d.classList.toggle("is-on", j === k); });
+      prev.disabled = k <= 0; next.disabled = k >= slides.length - 1;
     }
-    boxes.forEach(function (b) { b.addEventListener("change", update); });
-    update();
+    function go(k) { track.scrollTo({ left: k * track.clientWidth, behavior: reduceMotion.matches ? "auto" : "smooth" }); }
+    prev.addEventListener("click", function () { go(idx() - 1); });
+    next.addEventListener("click", function () { go(idx() + 1); });
+    track.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowRight") { e.preventDefault(); go(idx() + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); go(idx() - 1); }
+    });
+    var raf; track.addEventListener("scroll", function () { cancelAnimationFrame(raf); raf = requestAnimationFrame(sync); }, { passive: true });
+    window.addEventListener("resize", sync);
+    sync();
   });
 
   /* ---------- Formulário de contacto (abre o cliente de email) ---------- */
